@@ -1,117 +1,1677 @@
-                                                                                 local a={};local b=   
-                                                                        shared.__colortheme or {TextColor=Color3.       
-                                                                    fromRGB(255,60,60),ImageColor=Color3.fromRGB(255,60,60)} ;    
-                                                                local c=game:GetService("\84\119\101\101\110\83\101\114\118\105\99\101" 
-                                                            );a.LastTab=nil;a.Mouse=game.Players.LocalPlayer:GetMouse();a.Tween=function( 
-                                                          self,d,e,f,g,h)local i=c:Create(d,TweenInfo.new(e,f,g),h);i:Play();return i;end;a 
-                                                        .Tweens=function(self,j)local k={};for l,m in pairs(j) do local i=a:Tween(unpack(m)); 
-                                                      table.insert(k,i);end return k;end;a.OnClick=function(self,n,o)if n:IsA(                  
-                                                    "\71\117\105\66\97\115\101\50\100") then n.Active=true;n.InputBegan:Connect(function(p)if (p. 
-                                                  UserInputType==Enum.UserInputType.MouseButton1) then o();end end);end end;a.Load=function(self,q) 
-                                                  local q=q or {} ;q.RemoveLastSession=q.RemoveLastSession or true ;q.KeySystem=q.KeySystem or {      
-                                                Changelog="\119\101\101",IsRequired=true,Keys={"\80\111\107\101\83\116\101\114\107",                    
-                                                "\112\111\107\101\115\116\101\114\107","\100\104\114\117\118"}} ;if (q.RemoveLastSession and shared.      
-                                              __namelesswindow) then shared.__namelesswindow:Destroy();shared.__namelesswindow=nil;end shared.              
-                                              __namelesswindow=NamelessWindow;local NamelessWindow=Instance.new("\83\99\114\101\101\110\71\117\105");       
-                                            NamelessWindow.Name=game:GetService("\72\116\116\112\83\101\114\118\105\99\101"):GenerateGUID(false);             
-                                            NamelessWindow.ResetOnSpawn=false;NamelessWindow.Parent=(checkcaller and (typeof(checkcaller)==                     
-                                          "\102\117\110\99\116\105\111\110") and game.CoreGui) or game.Players.LocalPlayer.PlayerGui ;shared.__namelesswindow=    
-                                          NamelessWindow;local r=false;if (q.KeySystem and q.KeySystem.IsRequired) then local s=Enum.ThumbnailType.HeadShot;local t 
-                                          =Enum.ThumbnailSize.Size420x420;local u,v=game.Players:GetUserThumbnailAsync(game.Players.LocalPlayer.UserId,s,t);local w=5 
-                                          ;local x=Instance.new("\70\114\97\109\101");x.Name="\75\101\121\83\121\115\116\101\109";x.AnchorPoint=Vector2.new(0.5,0);x. 
-                                        Size=UDim2.new(0,450,0,350);x.Position=UDim2.new(0.5,0,1,40);x.BorderColor3=Color3.fromRGB(0,0,0);x.BorderSizePixel=0;x.        
-                                        BackgroundColor3=Color3.fromRGB(20,20,20);x.Parent=NamelessWindow;    --[[==============================]]local y=Instance.new(   
-                                        "\70\114\97\109\101");y.Name="\82\105\103\104\116";y.       --[[============================================]]AnchorPoint=Vector2 
-                                        .new(1,0);y.Size=UDim2.new(0,200,1,0);y.                --[[======================================================]]                
-                                      ClipsDescendants=true;y.BorderColor3=Color3.fromRGB(0 --[[==========================================================]],0,0);y.Position= 
-                                      UDim2.new(1,0,0,0);y.BorderSizePixel=0;y.           --[[==============================================================]]                
-                                      BackgroundColor3=Color3.fromRGB(30,30,30);y.Parent= --[[================================================================]]x;local z=      
-                                      Instance.new("\70\114\97\109\101");z.Name="\49";z.  --[[==================================================================]]ZIndex=2;z.   
-                                      AnchorPoint=Vector2.new(0,1);z.Size=UDim2.new(2,0,0 --[[==================================================================]],100);z.          
-                                    BorderColor3=Color3.fromRGB(27,42,53);z.Position=     --[[====================================================================]]UDim2.new(0,0 
-                    ,1,0);z.BorderSizePixel=0;z.BackgroundColor3=Color3.fromRGB(255,60,60 --[[====================================================================]]);z.Parent=y;   
-              local A=Instance.new("\73\109\97\103\101\76\97\98\101\108");A.Name="\49";A. --[[======================================================================]]AnchorPoint=  
-            Vector2.new(0,1);A.Size=UDim2.new(0.5,0,0,22);A.BorderColor3=Color3.fromRGB(  --[[======================================================================]]27,42,53);A.  
-          BackgroundTransparency=1;A.Position=UDim2.new(0,0,0,1);A.BorderSizePixel=0;A.   --[[======================================================================]]              
-        BackgroundColor3=Color3.fromRGB(255,60,60);A.ScaleType=Enum.ScaleType.Fit;A.      --[[======================================================================]]ImageColor3=  
-        Color3.fromRGB(255,60,60);A.Image=                                                --[[======================================================================]]              
-      "\114\98\120\97\115\115\101\116\105\100\58\47\47\49\51\50\57\54\52\55\50\52\48\49"; --[[======================================================================]]A.Parent=z;   
-      local B=Instance.new("\73\109\97\103\101\76\97\98\101\108");B.Name="\50";B.           --[[==================================================================]]AnchorPoint=    
-      Vector2.new(1,1);B.Size=UDim2.new(0.5,0,0,22);B.BorderColor3=Color3.fromRGB(27,42,53) --[[================================================================]];B.               
-    BackgroundTransparency=1;B.Position=UDim2.new(1,0,0,1);B.BorderSizePixel=0;B.           --[[==============================================================]]BackgroundColor3= 
-    Color3.fromRGB(255,60,60);B.ScaleType=Enum.ScaleType.Fit;B.ImageColor3=Color3.fromRGB(255 --[[==========================================================]],60,60);B.Image=    
-    "\114\98\120\97\115\115\101\116\105\100\58\47\47\49\51\50\57\54\52\55\50\52\48\49";B.Parent --[[====================================================]]=z;local C=Instance.new 
-    ("\76\111\99\97\108\83\99\114\105\112\116");C.Parent=z;local D=Instance.new(                  --[[==============================================]]"\70\114\97\109\101");D.  
-    Name="\50";D.AnchorPoint=Vector2.new(0.5,1);D.Size=UDim2.new(2,0,0,100);D.BorderColor3=Color3.    --[[====================================]]fromRGB(27,42,53);D.          
-    BackgroundTransparency=0.5;D.Position=UDim2.new(0,0,1, -10);D.BorderSizePixel=0;D.BackgroundColor3=   --[[========================]]Color3.fromRGB(255,60,60);D.Parent=y; 
-    spawn(function()while task.wait() do a:Tween(z,w,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,{AnchorPoint=Vector2.new(0.5,1)}).Completed:Wait();z.AnchorPoint=     
-  Vector2.new(0,1);end end);spawn(function()while task.wait() do a:Tween(D,w * 2 ,Enum.EasingStyle.Linear,Enum.EasingDirection.Out,{AnchorPoint=Vector2.new(0,1)}).       
-  Completed:Wait();z.AnchorPoint=Vector2.new(0.5,1);end end);local E=Instance.new("\73\109\97\103\101\76\97\98\101\108");E.Name="\49";E.AnchorPoint=Vector2.new(0,1);E. 
-  Size=UDim2.new(0.5,0,0,22);E.BorderColor3=Color3.fromRGB(27,42,53);E.BackgroundTransparency=1;E.Position=UDim2.new(0,0,0,1);E.BorderSizePixel=0;E.BackgroundColor3=     
-  Color3.fromRGB(255,60,60);E.ScaleType=Enum.ScaleType.Fit;E.ImageTransparency=0.5;E.ImageColor3=Color3.fromRGB(255,60,60);E.Image=                                       
-  "\114\98\120\97\115\115\101\116\105\100\58\47\47\49\51\50\57\54\52\55\50\52\48\49";E.Parent=D;local F=Instance.new("\73\109\97\103\101\76\97\98\101\108");F.Name="\50"; 
-  F.AnchorPoint=Vector2.new(1,1);F.Size=UDim2.new(0.5,0,0,22);F.BorderColor3=Color3.fromRGB(27,42,53);F.BackgroundTransparency=1;F.Position=UDim2.new(1,0,0,1);F.         
-  BorderSizePixel=0;F.BackgroundColor3=Color3.fromRGB(255,60,60);F.ScaleType=Enum.ScaleType.Fit;F.ImageTransparency=0.5;F.ImageColor3=Color3.fromRGB(255,60,60);F.Image=  
-  "\114\98\120\97\115\115\101\116\105\100\58\47\47\49\51\50\57\54\52\55\50\52\48\49";F.Parent=D;local G=Instance.new("\84\101\120\116\76\97\98\101\108");G.Name=          
-  "\84\105\116\108\101";G.ZIndex=2;G.AutomaticSize=Enum.AutomaticSize.Y;G.Size=UDim2.new(1,0,0,0);G.BorderColor3=Color3.fromRGB(0,0,0);G.BackgroundTransparency=1;G.      
-  Position=UDim2.new(0,0,0,10);G.BorderSizePixel=0;G.BackgroundColor3=Color3.fromRGB(255,255,255);G.FontSize=Enum.FontSize.Size18;G.TextSize=15;G.TextColor3=Color3.      
-  fromRGB(255,60,60);G.Text="\226\155\148\240\159\148\145\32\75\101\121\32\83\121\115\116\101\109\32\226\156\139\240\159\148\144";G.Font=Enum.Font.GothamBold;G.Parent=y; 
-  local H=Instance.new("\84\101\120\116\76\97\98\101\108");H.Name="\76\111\103";H.Size=UDim2.new(1,0,1, -30);H.ClipsDescendants=true;H.BorderColor3=Color3.fromRGB(0,0,0);H 
-  .BackgroundTransparency=1;H.Position=UDim2.new(0,0,0,30);H.BorderSizePixel=0;H.BackgroundColor3=Color3.fromRGB(255,255,255);H.FontSize=Enum.FontSize.Size14;H.            
-  TextTruncate=Enum.TextTruncate.AtEnd;H.TextSize=13;H.TextColor3=Color3.fromRGB(255,255,255);H.TextYAlignment=Enum.TextYAlignment.Top;H.Text=q.KeySystem.Changelog;H.      
-  TextWrapped=true;H.TextWrap=true;H.Font=Enum.Font.Gotham;H.TextTransparency=0.5;H.TextXAlignment=Enum.TextXAlignment.Left;H.LineHeight=1.5;H.Parent=y;local I=Instance.   
-  new("\85\73\80\97\100\100\105\110\103");I.PaddingLeft=UDim.new(0,20);I.Parent=H;local J=Instance.new("\73\109\97\103\101\76\97\98\101\108");J.Name=                       
-  "\83\104\97\100\111\119";J.ZIndex=0;J.AnchorPoint=Vector2.new(0.5,0.5);J.Size=UDim2.new(1,47,1,47);J.BackgroundTransparency=1;J.Position=UDim2.new(0.5,0,0.5,0);J.        
-  BorderSizePixel=0;J.ScaleType=Enum.ScaleType.Slice;J.ImageTransparency=0.5;J.ImageColor3=Color3.fromRGB(0,0,0);J.Image=                                                   
-  "\114\98\120\97\115\115\101\116\105\100\58\47\47\54\48\49\53\56\57\55\56\52\51";J.SliceCenter=Rect.new(49,49,450,450);J.Parent=x;local K=Instance.new(                    
-  "\70\114\97\109\101");K.Name="\76\101\102\116";K.Size=UDim2.new(1, -200,1,0);K.BorderColor3=Color3.fromRGB(0,0,0);K.BackgroundTransparency=1;K.BorderSizePixel=0;K.       
-  BackgroundColor3=Color3.fromRGB(255,255,255);K.Parent=x;local L=Instance.new("\70\114\97\109\101");L.Name="\85\115\101\114";L.AnchorPoint=Vector2.new(0.5,0);L.Size=UDim2 
-  .new(0,100,0,100);L.BorderColor3=Color3.fromRGB(0,0,0);L.BackgroundTransparency=1;L.Position=UDim2.new(0.5,0,0,50);L.BorderSizePixel=0;L.BackgroundColor3=Color3.fromRGB( 
-  255,255,255);L.Parent=K;local M=Instance.new("\73\109\97\103\101\76\97\98\101\108");M.Name="\73\109\97\103\101";M.AnchorPoint=Vector2.new(0.5,0.5);M.Size=UDim2.new(1, -  
-  20,1, -20);M.BorderColor3=Color3.fromRGB(0,0,0);M.BackgroundTransparency=1;M.Position=UDim2.new(0.5,0,0.5,0);M.BorderSizePixel=0;M.BackgroundColor3=Color3.fromRGB(255,   
-  255,255);M.ScaleType=Enum.ScaleType.Fit;M.Image=u;M.Parent=L;local N=Instance.new("\85\73\67\111\114\110\101\114");N.CornerRadius=UDim.new(1,0);N.Parent=M;local O=     
-  Instance.new("\85\73\83\116\114\111\107\101");O.Thickness=2;O.Color=Color3.fromRGB(255,60,60);O.Parent=L;local P=Instance.new("\85\73\67\111\114\110\101\114");P.       
-  CornerRadius=UDim.new(1,0);P.Parent=L;local Q=Instance.new("\84\101\120\116\66\111\120");Q.Name="\75\101\121\105\110\112\117\116";Q.AnchorPoint=Vector2.new(0.5,0.5);Q. 
-    Size=UDim2.new(0,200,0,25);Q.BorderColor3=Color3.fromRGB(0,0,0);Q.BackgroundTransparency=1;Q.Position=UDim2.new(0.5,0,0.5,10);Q.BorderSizePixel=0;Q.BackgroundColor3= 
-    Color3.fromRGB(255,255,255);Q.FontSize=Enum.FontSize.Size14;Q.PlaceholderColor3=Color3.fromRGB(255,255,255);Q.TextSize=13;Q.TextTransparency=0.5;Q.TextColor3=Color3. 
-    fromRGB(255,255,255);Q.Text="\75\101\121\32\104\101\114\101\46\46\46";Q.CursorPosition= -1;Q.Font=Enum.Font.Gotham;Q.Parent=K;local R=Instance.new(                   
-    "\85\73\83\116\114\111\107\101");R.ApplyStrokeMode=Enum.ApplyStrokeMode.Border;R.Color=Color3.fromRGB(40,40,40);R.Parent=Q;local S=Instance.new("\70\114\97\109\101") 
-      ;S.Name="\69\110\116\101\114\75\101\121";S.AnchorPoint=Vector2.new(0.5,0.5);S.Size=UDim2.new(0,80,0,25);S.Selectable=true;S.BorderColor3=Color3.fromRGB(0,0,0);S. 
-      Position=UDim2.new(0.5, -45,0.5,45);S.Active=true;S.BorderSizePixel=0;S.BackgroundColor3=Color3.fromRGB(255,60,60);S.Parent=K;local T=Instance.new(               
-      "\84\101\120\116\76\97\98\101\108");T.Name="\84\105\116\108\101";T.AnchorPoint=Vector2.new(0.5,0.5);T.Size=UDim2.new(1,0,0,25);T.Selectable=true;T.BorderColor3=  
-        Color3.fromRGB(0,0,0);T.BackgroundTransparency=1;T.Position=UDim2.new(0.5,0,0.5,0);T.Active=true;T.BorderSizePixel=0;T.BackgroundColor3=Color3.fromRGB(255,255, 
-        255);T.FontSize=Enum.FontSize.Size14;T.TextSize=13;T.TextColor3=Color3.fromRGB(255,255,255);T.Text="\69\110\116\101\114\32\75\101\121";T.Font=Enum.Font.Gotham; 
-        T.Parent=S;local U=Instance.new("\85\73\67\111\114\110\101\114");U.CornerRadius=UDim.new(0,4);U.Parent=S;local V=Instance.new("\70\114\97\109\101");V.Name=     
-          "\71\101\116\75\101\121";V.AnchorPoint=Vector2.new(0.5,0.5);V.Size=UDim2.new(0,80,0,25);V.Selectable=true;V.BorderColor3=Color3.fromRGB(0,0,0);V.Position=  
-            UDim2.new(0.5,45,0.5,45);V.Active=true;V.BorderSizePixel=0;V.BackgroundColor3=Color3.fromRGB(255,60,60);V.Parent=K;local W=Instance.new(                  
-              "\84\101\120\116\76\97\98\101\108");W.Name="\84\105\116\108\101";W.AnchorPoint=Vector2.new(0.5,0.5);W.Size=UDim2.new(1,0,0,25);W.Selectable=true;W.     
-                BorderColor3=Color3.fromRGB(0,0,0);W.BackgroundTransparency=1;W.Position=UDim2.new(0.5,0,0.5,0);W.Active=true;W.BorderSizePixel=0;W.BackgroundColor3= 
-                  Color3.fromRGB(255,255,255);W.FontSize=Enum.FontSize.Size14;W.TextSize=13;W.TextColor3=Color3.fromRGB(255,255,255);W.Text=                        
-                      "\71\101\116\32\75\101\121";W.Font=Enum.Font.Gotham;W.Parent=V;local X=Instance.new("\85\73\67\111\114\110\101\114");X.CornerRadius=UDim.new( 
-                                  0,4);X.Parent=V;a:Tween(x,0.25,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{AnchorPoint=Vector2.new(0.5,0.5),Position=UDim2.   
-                                      new(0.5,0,0.5,0)});a:OnClick(S,function()if table.find(q.KeySystem.Keys,Q.Text) then a:Tween(x,0.5,Enum.EasingStyle.Sine,Enum 
-                                      .EasingDirection.Out,{AnchorPoint=Vector2.new(0.5,0),Position         =UDim2.new(0.5,0,1,40)});wait(0.5);x:Destroy();r=true;  
-                                      else spawn(function()local Y=10;for Z=1,5 do local _,a0=math.         random( -Y,Y),math.random( -Y,Y);a:Tween(x,0.02,Enum. 
-                                      EasingStyle.Sine,Enum.EasingDirection.InOut,{Position=UDim2.          new(0.5,_,0.5,a0)}).Completed:Wait();end a:Tween(x,   
-                                      0.08,Enum.EasingStyle.Sine,Enum.EasingDirection.InOut,{               Position=UDim2.new(0.5,0,0.5,0)});end);a:Tween(Q,0.25 
-                                      ,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{TextColor3=            Color3.fromRGB(255,10,10)});wait(0.25);a:Tween(Q,   
-                                      0.175,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{                  TextColor3=Color3.fromRGB(255,255,255)});end end);  
-                                      end repeat task.wait();until r local a1={};a1.Window=function           (self,q)local q=q or {} ;q.Title=q.Title or       
-                                        "\85\110\116\105\116\108\101\100" ;q.Description=q.                   Description or                                    
-                                        "\78\111\32\100\101\115\99\114\105\112\116\105\111\110\46"              ;q.User=q.User or {Username=game.Players.       
-                                        LocalPlayer.Name,Membership="\83\107\105\100\100\101\114"}              ;local a2=Instance.new("\70\114\97\109\101"); 
-                                        a2.Name="\77\97\105\110";a2.Active=true;a2.AnchorPoint=                 Vector2.new(0,0.5);a2.Size=UDim2.new(0,650,0, 
-                                        500);a2.BorderColor3=Color3.fromRGB(0,0,0);a2.Position=                   UDim2.new(1,40,0.5,0);a2.BorderSizePixel= 
-                                        0;a2.BackgroundColor3=Color3.fromRGB(20,20,20);a2.Parent=                 NamelessWindow;a:Tween(a2,0.8,Enum.       
-                                          EasingStyle.Sine,Enum.EasingDirection.Out,{Position=                      UDim2.new(0.5,0,0.5,0),AnchorPoint=   
-                                          Vector2.new(0.5,0.5)});local a3=false;a.Mouse.Move:                         Connect(function()if a3 then a: 
-                                            Tween(a2,0.1,Enum.EasingStyle.Sine,Enum.                                    EasingDirection.Out,{     
-                                            Position=UDim2.new(0,a.Mouse.X-a2.Parent.                                                     
-                                              AbsolutePosition.X ,0,a.Mouse.Y-a2.Parent.    
-                                                AbsolutePosition.Y )});end end);local K=  
-                                                    Instance.new("\70\114\97\109\101"); 
-                                                          K.Name=                 
+local Library = {}
 
+local Theme = shared.__colortheme or {
+	TextColor = Color3.fromRGB(255, 60, 60),
+	ImageColor = Color3.fromRGB(255, 60, 60)
+}
 
---------------------------------------------------------------------------------
-"\76\101\102\116";K.Size=UDim2.new(0,200,1,0);K.BorderColor3=Color3.fromRGB(0,0,0);K.BorderSizePixel=0;K.BackgroundColor3=Color3.fromRGB(24,24,24);K.Parent=a2;K.InputBegan:Connect(function(p)if (p.UserInputType==Enum.UserInputType.MouseButton1) then a2.AnchorPoint=Vector2.new((a.Mouse.X-a2.AbsolutePosition.X)/a2.AbsoluteSize.X ,(a.Mouse.Y-a2.AbsolutePosition.Y)/a2.AbsoluteSize.Y );a2.Position=UDim2.new(0,a.Mouse.X-a2.Parent.AbsolutePosition.X ,0,a.Mouse.Y-a2.Parent.AbsolutePosition.Y );a3=true;end end);K.InputEnded:Connect(function(p)if (p.UserInputType==Enum.UserInputType.MouseButton1) then a3=false;end end);local G=Instance.new("\84\101\120\116\76\97\98\101\108");G.Name="\84\105\116\108\101";G.ZIndex=2;G.AutomaticSize=Enum.AutomaticSize.Y;G.Size=UDim2.new(1, -15,0,0);G.BorderColor3=Color3.fromRGB(0,0,0);G.BackgroundTransparency=1;G.Position=UDim2.new(0,15,0,15);G.BorderSizePixel=0;G.BackgroundColor3=Color3.fromRGB(255,255,255);G.FontSize=Enum.FontSize.Size18;G.TextSize=15;G.TextColor3=b.TextColor;G.Text=q.Title;G.Font=Enum.Font.GothamBold;G.TextXAlignment=Enum.TextXAlignment.Left;G.Parent=K;local a4=Instance.new("\84\101\120\116\76\97\98\101\108");a4.Name="\83\117\98\116\105\116\108\101";a4.ZIndex=2;a4.AutomaticSize=Enum.AutomaticSize.Y;a4.Size=UDim2.new(1, -15,0,0);a4.BorderColor3=Color3.fromRGB(0,0,0);a4.BackgroundTransparency=1;a4.Position=UDim2.new(0,15,0,32);a4.BorderSizePixel=0;a4.BackgroundColor3=Color3.fromRGB(255,255,255);a4.FontSize=Enum.FontSize.Size12;a4.TextSize=12;a4.TextColor3=Color3.fromRGB(255,255,255);a4.Text=q.Description;a4.Font=Enum.Font.Gotham;a4.TextTransparency=0.5;a4.TextXAlignment=Enum.TextXAlignment.Left;a4.Parent=K;local a5=Instance.new("\70\114\97\109\101");a5.Name="\84\97\98\66\117\116\116\111\110\67\111\110\116\97\105\110\101\114";a5.ZIndex=2;a5.Size=UDim2.new(1,0,1, -50);a5.BorderColor3=Color3.fromRGB(0,0,0);a5.BackgroundTransparency=1;a5.Position=UDim2.new(0,0,0,50);a5.BorderSizePixel=0;a5.BackgroundColor3=Color3.fromRGB(255,255,255);a5.Parent=K;local a6=Instance.new("\70\114\97\109\101");a6.Name="\76\111\99\97\108";a6.ZIndex=2;a6.AnchorPoint=Vector2.new(0.5,1);a6.Size=UDim2.new(1,0,0,50);a6.ClipsDescendants=true;a6.BorderColor3=Color3.fromRGB(0,0,0);a6.Position=UDim2.new(0.5,0,1,0);a6.BorderSizePixel=0;a6.BackgroundColor3=Color3.fromRGB(28,28,28);a6.Parent=a5;local L=Instance.new("\84\101\120\116\76\97\98\101\108");L.Name="\85\115\101\114";L.ZIndex=2;L.Size=UDim2.new(0,200,0,15);L.BorderColor3=Color3.fromRGB(0,0,0);L.BackgroundTransparency=1;L.Position=UDim2.new(0,0,0,10);L.BorderSizePixel=0;L.BackgroundColor3=Color3.fromRGB(255,255,255);L.FontSize=Enum.FontSize.Size18;L.TextSize=15;L.TextColor3=Color3.fromRGB(255,255,255);L.Text=q.User.Username;L.Font=Enum.Font.GothamMedium;L.TextXAlignment=Enum.TextXAlignment.Left;L.Parent=a6;local I=Instance.new("\85\73\80\97\100\100\105\110\103");I.PaddingLeft=UDim.new(0,10);I.Parent=L;local a7=Instance.new("\84\101\120\116\76\97\98\101\108");a7.Name="\77\101\109\98\101\114\115\104\105\112";a7.ZIndex=2;a7.Size=UDim2.new(0,200,0,15);a7.BorderColor3=Color3.fromRGB(0,0,0);a7.BackgroundTransparency=1;a7.Position=UDim2.new(0,0,0,22);a7.BorderSizePixel=0;a7.BackgroundColor3=Color3.fromRGB(255,255,255);a7.FontSize=Enum.FontSize.Size12;a7.TextSize=12;a7.TextColor3=Color3.fromRGB(255,255,255);a7.Text=q.User.Membership;a7.Font=Enum.Font.Gotham;a7.TextTransparency=0.5;a7.TextXAlignment=Enum.TextXAlignment.Left;a7.Parent=a6;local a8=Instance.new("\85\73\80\97\100\100\105\110\103");a8.PaddingLeft=UDim.new(0,10);a8.Parent=a7;local a9=Instance.new("\83\99\114\111\108\108\105\110\103\70\114\97\109\101");a9.Name="\83\99\114\111\108\108\101\114";a9.ZIndex=2;a9.AnchorPoint=Vector2.new(0.5,1);a9.Size=UDim2.new(1, -10,1, -60);a9.BorderColor3=Color3.fromRGB(0,0,0);a9.BackgroundTransparency=1;a9.Position=UDim2.new(0.5,0,1, -50);a9.Active=true;a9.BorderSizePixel=0;a9.BackgroundColor3=Color3.fromRGB(255,255,255);a9.AutomaticCanvasSize=Enum.AutomaticSize.Y;a9.CanvasSize=UDim2.new(0,0,0,0);a9.MidImage="\114\98\120\97\115\115\101\116\105\100\58\47\47\49\52\54\50\50\55\55\51\55\53\55";a9.ScrollBarThickness=2;a9.Parent=a5;local aa=Instance.new("\85\73\76\105\115\116\76\97\121\111\117\116");aa.SortOrder=Enum.SortOrder.LayoutOrder;aa.Parent=a9;local y=Instance.new("\70\114\97\109\101");y.Name="\82\105\103\104\116";y.AnchorPoint=Vector2.new(1,0.5);y.Size=UDim2.new(1, -200,1,0);y.BorderColor3=Color3.fromRGB(0,0,0);y.BackgroundTransparency=1;y.Position=UDim2.new(1,0,0.5,0);y.BorderSizePixel=0;y.BackgroundColor3=Color3.fromRGB(255,255,255);y.Parent=a2;local ab=Instance.new("\70\114\97\109\101");ab.Name="\84\97\98\67\111\110\116\97\105\110\101\114";ab.AnchorPoint=Vector2.new(0.5,0.5);ab.Size=UDim2.new(1,0,1,0);ab.BorderColor3=Color3.fromRGB(0,0,0);ab.BackgroundTransparency=1;ab.Position=UDim2.new(0.5,0,0.5,0);ab.BorderSizePixel=0;ab.BackgroundColor3=Color3.fromRGB(255,255,255);ab.ClipsDescendants=true;ab.Parent=y;local J=Instance.new("\73\109\97\103\101\76\97\98\101\108");J.Name="\83\104\97\100\111\119";J.ZIndex=0;J.AnchorPoint=Vector2.new(0.5,0.5);J.Size=UDim2.new(1,47,1,47);J.BackgroundTransparency=1;J.Position=UDim2.new(0.5,0,0.5,0);J.BorderSizePixel=0;J.ScaleType=Enum.ScaleType.Slice;J.ImageTransparency=0.5;J.ImageColor3=Color3.fromRGB(0,0,0);J.Image="\114\98\120\97\115\115\101\116\105\100\58\47\47\54\48\49\53\56\57\55\56\52\51";J.SliceCenter=Rect.new(49,49,450,450);J.Parent=a2;local ac={};ac.CloseTabs=function(self,ad)for l,ae in pairs(a9:GetChildren()) do if (ae:IsA("\70\114\97\109\101") and (ae.Name:sub(1,10)=="\84\97\98\66\117\116\116\111\110\95") and (ae~=ad) and ab:FindFirstChild("\84\97\98\95"   .. ae.Name:sub(11, #ae.Name) )) then local af=ab:FindFirstChild("\84\97\98\95"   .. ae.Name:sub(11, #ae.Name) );a:Tweens({{ae.Title,0.175,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{TextTransparency=0.5}},{ae.Image,0.175,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{ImageTransparency=0.5}},{af,0.25,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{Position=UDim2.new(0,0,1,0)}}});end end end;ac.Tab=function(self,q)local q=q or {} ;q.Title=q.Title or "\63\63\63" ;q.Description=q.Description or "\63\63\63" ;q.Image=q.Image or "\114\98\120\97\115\115\101\116\105\100\58\47\47\49\48\55\50\51\51\54\53\57\56\55" ;local ag=Instance.new("\70\114\97\109\101");ag.Name="\84\97\98\66\117\116\116\111\110\95"   .. q.Title ;ag.ZIndex=2;ag.Size=UDim2.new(1,0,0,30);ag.BorderColor3=Color3.fromRGB(0,0,0);ag.BackgroundTransparency=1;ag.BorderSizePixel=0;ag.BackgroundColor3=Color3.fromRGB(255,255,255);ag.Parent=a9;local M=Instance.new("\73\109\97\103\101\76\97\98\101\108");M.Name="\73\109\97\103\101";M.ZIndex=2;M.AnchorPoint=Vector2.new(0,0.5);M.Size=UDim2.new(0,15,0,15);M.BorderColor3=Color3.fromRGB(0,0,0);M.BackgroundTransparency=1;M.Position=UDim2.new(0,15,0.5,0);M.BorderSizePixel=0;M.BackgroundColor3=Color3.fromRGB(255,255,255);M.ImageTransparency=0.5;M.Image=q.Image;M.Parent=ag;local G=Instance.new("\84\101\120\116\76\97\98\101\108");G.Name="\84\105\116\108\101";G.ZIndex=2;G.AnchorPoint=Vector2.new(1,0.5);G.Size=UDim2.new(1, -35,0,20);G.BorderColor3=Color3.fromRGB(0,0,0);G.BackgroundTransparency=1;G.Position=UDim2.new(1,0,0.5,0);G.BorderSizePixel=0;G.BackgroundColor3=Color3.fromRGB(255,255,255);G.FontSize=Enum.FontSize.Size14;G.TextSize=13;G.TextColor3=Color3.fromRGB(255,255,255);G.Text=q.Title;G.Font=Enum.Font.Gotham;G.TextTransparency=0.5;G.TextXAlignment=Enum.TextXAlignment.Left;G.Parent=ag;local af=Instance.new("\70\114\97\109\101");af.Name="\84\97\98\95"   .. q.Title ;af.Position=UDim2.new(0,0, -1,0);af.Size=UDim2.new(1,0,1,0);af.BorderColor3=Color3.fromRGB(0,0,0);af.BackgroundTransparency=1;af.BorderSizePixel=0;af.BackgroundColor3=Color3.fromRGB(255,255,255);af.Parent=ab;local ah=Instance.new("\70\114\97\109\101");ah.Name="\72\101\97\100\101\114";ah.Size=UDim2.new(1,0,0,50);ah.BorderColor3=Color3.fromRGB(0,0,0);ah.BackgroundTransparency=1;ah.BorderSizePixel=0;ah.BackgroundColor3=Color3.fromRGB(255,255,255);ah.Parent=af;local ai=Instance.new("\84\101\120\116\66\111\120");ai.Name="\83\101\97\114\99\104\98\111\120";ai.AnchorPoint=Vector2.new(1,0.5);ai.AutomaticSize=Enum.AutomaticSize.X;ai.Size=UDim2.new(0,0,0,25);ai.BorderColor3=Color3.fromRGB(0,0,0);ai.Position=UDim2.new(1, -10,0.5,0);ai.BorderSizePixel=0;ai.BackgroundColor3=Color3.fromRGB(24,24,24);ai.FontSize=Enum.FontSize.Size12;ai.PlaceholderColor3=Color3.fromRGB(127,127,127);ai.TextSize=12;ai.TextTransparency=0.5;ai.TextColor3=Color3.fromRGB(255,255,255);ai.PlaceholderText="\83\101\97\114\99\104";ai.Text="";ai.Font=Enum.Font.Gotham;ai.Parent=ah;local I=Instance.new("\85\73\80\97\100\100\105\110\103");I.PaddingLeft=UDim.new(0,5);I.PaddingRight=UDim.new(0,20);I.Parent=ai;local aj=Instance.new("\73\109\97\103\101\76\97\98\101\108");aj.Name="\73\99\111\110";aj.AnchorPoint=Vector2.new(1,0.5);aj.Size=UDim2.new(0,12,0,12);aj.BorderColor3=Color3.fromRGB(0,0,0);aj.BackgroundTransparency=1;aj.Position=UDim2.new(1,15,0.5,0);aj.BorderSizePixel=0;aj.BackgroundColor3=Color3.fromRGB(255,255,255);aj.Image="\114\98\120\97\115\115\101\116\105\100\58\47\47\55\48\55\50\55\50\49\53\53\57";aj.Parent=ai;local O=Instance.new("\85\73\83\116\114\111\107\101");O.ApplyStrokeMode=Enum.ApplyStrokeMode.Border;O.Thickness=1;O.Color=Color3.fromRGB(45,45,45);O.Parent=ai;local ak=Instance.new("\84\101\120\116\76\97\98\101\108");ak.Name="\83\117\98\116\105\116\108\101";ak.AutomaticSize=Enum.AutomaticSize.Y;ak.Size=UDim2.new(1, -15,0,0);ak.BorderColor3=Color3.fromRGB(0,0,0);ak.BackgroundTransparency=1;ak.Position=UDim2.new(0,15,0,32);ak.BorderSizePixel=0;ak.BackgroundColor3=Color3.fromRGB(255,255,255);ak.FontSize=Enum.FontSize.Size12;ak.TextSize=12;ak.TextColor3=Color3.fromRGB(255,255,255);ak.Text=q.Description;ak.Font=Enum.Font.Gotham;ak.TextTransparency=0.5;ak.TextXAlignment=Enum.TextXAlignment.Left;ak.Parent=ah;local al=Instance.new("\84\101\120\116\76\97\98\101\108");al.Name="\84\105\116\108\101";al.AutomaticSize=Enum.AutomaticSize.Y;al.Size=UDim2.new(1, -15,0,0);al.BorderColor3=Color3.fromRGB(0,0,0);al.BackgroundTransparency=1;al.Position=UDim2.new(0,15,0,15);al.BorderSizePixel=0;al.BackgroundColor3=Color3.fromRGB(255,255,255);al.FontSize=Enum.FontSize.Size18;al.TextSize=15;al.TextColor3=b.TextColor;al.Text=q.Title;al.Font=Enum.Font.GothamBold;al.TextXAlignment=Enum.TextXAlignment.Left;al.Parent=ah;local am=Instance.new("\83\99\114\111\108\108\105\110\103\70\114\97\109\101");am.Name="\73\110";am.Size=UDim2.new(1,0,1, -50);am.Selectable=false;am.BorderColor3=Color3.fromRGB(0,0,0);am.BackgroundTransparency=1;am.Position=UDim2.new(0,0,0,50);am.BorderSizePixel=0;am.BackgroundColor3=Color3.fromRGB(255,255,255);am.AutomaticCanvasSize=Enum.AutomaticSize.Y;am.CanvasSize=UDim2.new(0,0,0,0);am.ScrollBarImageTransparency=1;am.ScrollBarThickness=0;am.Parent=af;local a8=Instance.new("\85\73\80\97\100\100\105\110\103");a8.PaddingTop=UDim.new(0,5);a8.PaddingBottom=UDim.new(0,5);a8.PaddingLeft=UDim.new(0,5);a8.PaddingRight=UDim.new(0,5);a8.Parent=am;local K=Instance.new("\70\114\97\109\101");K.Name="\76\101\102\116";K.AutomaticSize=Enum.AutomaticSize.Y;K.Size=UDim2.new(0.5, -5,0,0);K.BorderColor3=Color3.fromRGB(0,0,0);K.BackgroundTransparency=1;K.BorderSizePixel=0;K.BackgroundColor3=Color3.fromRGB(255,255,255);K.Parent=am;local an=Instance.new("\85\73\80\97\100\100\105\110\103");an.PaddingBottom=UDim.new(0,5);an.PaddingLeft=UDim.new(0,5);an.PaddingRight=UDim.new(0,5);an.Parent=K;local aa=Instance.new("\85\73\76\105\115\116\76\97\121\111\117\116");aa.SortOrder=Enum.SortOrder.LayoutOrder;aa.Padding=UDim.new(0,8);aa.Parent=K;local y=Instance.new("\70\114\97\109\101");y.Name="\82\105\103\104\116";y.AnchorPoint=Vector2.new(1,0);y.AutomaticSize=Enum.AutomaticSize.Y;y.Size=UDim2.new(0.5, -5,0,0);y.BorderColor3=Color3.fromRGB(0,0,0);y.BackgroundTransparency=1;y.Position=UDim2.new(1,0,0,0);y.BorderSizePixel=0;y.BackgroundColor3=Color3.fromRGB(255,255,255);y.Parent=am;local ao=Instance.new("\85\73\80\97\100\100\105\110\103");ao.PaddingBottom=UDim.new(0,5);ao.PaddingLeft=UDim.new(0,5);ao.PaddingRight=UDim.new(0,5);ao.Parent=y;local ap=Instance.new("\85\73\76\105\115\116\76\97\121\111\117\116");ap.SortOrder=Enum.SortOrder.LayoutOrder;ap.Padding=UDim.new(0,8);ap.Parent=y;local aq={};local function ar(as)local at=0;for l,au in pairs(as:GetChildren()) do if (au:IsA("\70\114\97\109\101") and au.Visible) then at=at + 1 ;end end return at;end local function av(aw)local ax=0;for l,au in pairs(aq) do if (l:sub(1, #aw)==aw:sub(1, #aw)) then au[1].Visible=true;else au[1].Visible=false;end end end ai.Focused:Connect(function()a:Tween(O,0.25,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{Color=b.ImageColor});end);ai.FocusLost:Connect(function()a:Tween(O,0.175,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{Color=Color3.fromRGB(45,45,45)});end);ai:GetPropertyChangedSignal("\84\101\120\116"):Connect(function()av(ai.Text);end);a:OnClick(ag,function()if (a.LastTab~=af) then ac:CloseTabs(ag);af.Position=UDim2.new( -1,0,0,0);a:Tweens({{G,0.25,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{TextTransparency=0}},{M,0.25,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{ImageTransparency=0}},{af,0.5,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{Position=UDim2.new(0,0,0,0)}}});a.LastTab=af;end end);local ay={};ay.Section=function(self,q)local q=q or {} ;q.Title=q.Title or "\83\101\99\116\105\111\110" ;q.Side=((q.Side==2) and y) or K ;local az=Instance.new("\70\114\97\109\101");az.Name="\83\101\99\116\105\111\110\95"   .. q.Title ;az.AutomaticSize=Enum.AutomaticSize.None;az.Size=UDim2.new(1,0,0,30);az.ClipsDescendants=true;az.BorderColor3=Color3.fromRGB(0,0,0);az.BorderSizePixel=0;az.BackgroundColor3=Color3.fromRGB(24,24,24);az.Parent=q.Side;local O=Instance.new("\85\73\83\116\114\111\107\101");O.Thickness=1;O.Color=Color3.fromRGB(45,45,45);O.Parent=az;local G=Instance.new("\84\101\120\116\76\97\98\101\108");G.Name="\84\105\116\108\101";G.AutomaticSize=Enum.AutomaticSize.Y;G.Size=UDim2.new(1, -15,0,0);G.BorderColor3=Color3.fromRGB(0,0,0);G.BackgroundTransparency=1;G.Position=UDim2.new(0,0,0,10);G.BorderSizePixel=0;G.BackgroundColor3=Color3.fromRGB(255,255,255);G.FontSize=Enum.FontSize.Size12;G.TextSize=12;G.TextColor3=b.TextColor;G.Text=q.Title;G.Font=Enum.Font.GothamBold;G.TextXAlignment=Enum.TextXAlignment.Left;G.Parent=az;local aA=Instance.new("\70\114\97\109\101");aA.Name="\67\111\110\116\97\105\110\101\114";aA.AutomaticSize=Enum.AutomaticSize.Y;aA.Size=UDim2.new(1,0,0,0);aA.ClipsDescendants=false;aA.BorderColor3=Color3.fromRGB(0,0,0);aA.BackgroundTransparency=1;aA.Position=UDim2.new(0,0,0,30);aA.BorderSizePixel=0;aA.BackgroundColor3=Color3.fromRGB(255,255,255);aA.Parent=az;local aa=Instance.new("\85\73\76\105\115\116\76\97\121\111\117\116");aa.SortOrder=Enum.SortOrder.LayoutOrder;aa.Padding=UDim.new(0,5);aa.Parent=aA;local I=Instance.new("\85\73\80\97\100\100\105\110\103");I.PaddingBottom=UDim.new(0,10);I.PaddingLeft=UDim.new(0,10);I.PaddingRight=UDim.new(0,10);I.Parent=az;local aB=Instance.new("\70\114\97\109\101");aB.Name="\68\111\99\107";aB.AnchorPoint=Vector2.new(1,0);aB.Size=UDim2.new(0,30,0,30);aB.BorderColor3=Color3.fromRGB(0,0,0);aB.BackgroundTransparency=1;aB.Position=UDim2.new(1,10,0,0);aB.BorderSizePixel=0;aB.BackgroundColor3=Color3.fromRGB(255,255,255);aB.Parent=az;local aj=Instance.new("\73\109\97\103\101\76\97\98\101\108");aj.Name="\73\99\111\110";aj.AnchorPoint=Vector2.new(0.5,0.5);aj.Size=UDim2.new(1, -15,1, -15);aj.BorderColor3=Color3.fromRGB(0,0,0);aj.BackgroundTransparency=1;aj.Position=UDim2.new(0.5,0,0.5,0);aj.BorderSizePixel=0;aj.BackgroundColor3=Color3.fromRGB(255,255,255);aj.Image="\114\98\120\97\115\115\101\116\105\100\58\47\47\55\48\55\50\55\50\48\56\55\48";aj.Parent=aB;a:OnClick(aB,function()if (aj.Rotation==0) then az.ClipsDescendants=false;az.AutomaticSize=Enum.AutomaticSize.Y;a:Tween(aj,0.25,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{Rotation=135,ImageColor3=b.ImageColor});elseif (aj.Rotation==135) then az.ClipsDescendants=true;az.AutomaticSize=Enum.AutomaticSize.None;a:Tween(aj,0.25,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{Rotation=0,ImageColor3=Color3.fromRGB(255,255,255)});end end);aq[q.Title]={az,az.Parent};local aC={};aC.Label=function(self,q)local q=q or {} ;q.Text=q.Text or "\76\97\98\101\108" ;local aD=Instance.new("\84\101\120\116\76\97\98\101\108");aD.Name="\76\97\98\101\108\95"   .. q.Text ;aD.Size=UDim2.new(1,0,0,15);aD.BorderColor3=Color3.fromRGB(0,0,0);aD.BackgroundTransparency=1;aD.BorderSizePixel=0;aD.BackgroundColor3=Color3.fromRGB(255,255,255);aD.FontSize=Enum.FontSize.Size12;aD.TextSize=12;aD.TextColor3=Color3.fromRGB(255,255,255);aD.Text=q.Text;aD.Font=Enum.Font.Gotham;aD.TextTransparency=0.5;aD.TextXAlignment=Enum.TextXAlignment.Left;aD.Parent=aA;end;aC.Button=function(self,q)local q=q or {} ;q.Text=q.Text or "\66\117\116\116\111\110" ;q.Callback=q.Callback or function()end ;local aE=Instance.new("\70\114\97\109\101");aE.Name="\66\117\116\116\111\110\95"   .. q.Text ;aE.ZIndex=3;aE.Size=UDim2.new(1,0,0,20);aE.BorderColor3=Color3.fromRGB(0,0,0);aE.BackgroundTransparency=1;aE.BorderSizePixel=0;aE.BackgroundColor3=Color3.fromRGB(255,255,255);aE.ClipsDescendants=true;aE.Parent=aA;local G=Instance.new("\84\101\120\116\76\97\98\101\108");G.Name="\84\105\116\108\101";G.AnchorPoint=Vector2.new(0,0.5);G.Size=UDim2.new(0,200,0,12);G.BorderColor3=Color3.fromRGB(0,0,0);G.BackgroundTransparency=1;G.Position=UDim2.new(0,0,0.5,0);G.BorderSizePixel=0;G.BackgroundColor3=Color3.fromRGB(255,255,255);G.FontSize=Enum.FontSize.Size12;G.TextSize=12;G.TextColor3=Color3.fromRGB(255,255,255);G.Text="\66\117\116\116\111\110";G.Font=Enum.Font.Gotham;G.TextTransparency=0.5;G.TextXAlignment=Enum.TextXAlignment.Left;G.Parent=aE;local aj=Instance.new("\73\109\97\103\101\76\97\98\101\108");aj.Name="\73\99\111\110";aj.AnchorPoint=Vector2.new(1,0.5);aj.Size=UDim2.new(0,15,0,15);aj.BorderColor3=Color3.fromRGB(0,0,0);aj.BackgroundTransparency=1;aj.Position=UDim2.new(1,0,0.5,0);aj.BorderSizePixel=0;aj.BackgroundColor3=Color3.fromRGB(255,255,255);aj.Image="\114\98\120\97\115\115\101\116\105\100\58\47\47\49\48\55\50\51\51\55\53\50\53\48";aj.ImageColor3=b.ImageColor;aj.Parent=aE;local aF=Instance.new("\70\114\97\109\101");aF.Name="\67\105\114\99\108\101\69\102\102\101\99\116\87\97\118\101";aF.BackgroundColor3=b.ImageColor;aF.BorderSizePixel=0;aF.Size=UDim2.fromOffset(0,0);aF.Visible=false;aF.Parent=aE;local aG=Instance.new("\85\73\67\111\114\110\101\114");aG.CornerRadius=UDim.new(1,0);aG.Parent=aF;a:OnClick(aE,function()q.Callback();if (aF.Visible==false) then aF.Visible=true;aF.Size=UDim2.new(0,0,0,0);aF.Position=UDim2.new(0,0,0.5,0);aF.BackgroundTransparency=0.5;a:Tween(aF,0.5,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{BackgroundTransparency=1,Size=UDim2.new(1,0,0,500)});wait(0.5);aF.Visible=false;end end);end;aC.Checkbox=function(self,q)local q=q or {} ;q.Text=q.Text or "\67\104\101\99\107\98\111\120" ;q.Default=q.Default or false ;q.Callback=q.Callback or function()end ;local aH=Instance.new("\70\114\97\109\101");aH.Name="\67\104\101\99\107\98\111\120";aH.Size=UDim2.new(1,0,0,20);aH.BorderColor3=Color3.fromRGB(0,0,0);aH.BackgroundTransparency=1;aH.BorderSizePixel=0;aH.BackgroundColor3=Color3.fromRGB(255,255,255);aH.Parent=aA;local G=Instance.new("\84\101\120\116\76\97\98\101\108");G.Name="\84\105\116\108\101";G.AnchorPoint=Vector2.new(0,0.5);G.Size=UDim2.new(0,200,0,12);G.BorderColor3=Color3.fromRGB(0,0,0);G.BackgroundTransparency=1;G.Position=UDim2.new(0,0,0.5,0);G.BorderSizePixel=0;G.BackgroundColor3=Color3.fromRGB(255,255,255);G.FontSize=Enum.FontSize.Size12;G.TextSize=12;G.TextColor3=Color3.fromRGB(255,255,255);G.Text=q.Text;G.Font=Enum.Font.Gotham;G.TextTransparency=0.5;G.TextXAlignment=Enum.TextXAlignment.Left;G.Parent=aH;local aI=Instance.new("\70\114\97\109\101");aI.Name="\66\111\120";aI.AnchorPoint=Vector2.new(1,0.5);aI.Size=UDim2.new(0,15,0,20);aI.BorderColor3=Color3.fromRGB(0,0,0);aI.BackgroundTransparency=1;aI.Position=UDim2.new(1,0,0.5,0);aI.BorderSizePixel=0;aI.BackgroundColor3=Color3.fromRGB(255,255,255);aI.Parent=aH;local aJ=Instance.new("\73\109\97\103\101\76\97\98\101\108");aJ.Name="\67\104\101\99\107";aJ.AnchorPoint=Vector2.new(0.5,0.5);aJ.Size=UDim2.new(0,15,0,15);aJ.BorderColor3=Color3.fromRGB(0,0,0);aJ.BackgroundTransparency=1;aJ.Position=UDim2.new(0.5,0,0.5,0);aJ.BorderSizePixel=0;aJ.BackgroundColor3=Color3.fromRGB(255,255,255);aJ.ImageTransparency=((q.Default==false) and 1) or 0 ;aJ.Image="\114\98\120\97\115\115\101\116\105\100\58\47\47\55\48\55\50\55\48\54\53\55\54";aJ.ImageColor3=b.ImageColor;aJ.Parent=aI;local aK=Instance.new("\73\109\97\103\101\76\97\98\101\108");aK.Name="\85\110\99\104\101\99\107";aK.AnchorPoint=Vector2.new(0.5,0.5);aK.Size=UDim2.new(0,15,0,15);aK.BorderColor3=Color3.fromRGB(0,0,0);aK.BackgroundTransparency=1;aK.Position=UDim2.new(0.5,0,0.5,0);aK.BorderSizePixel=0;aK.BackgroundColor3=Color3.fromRGB(255,255,255);aK.Image="\114\98\120\97\115\115\101\116\105\100\58\47\47\55\48\55\50\55\50\50\57\54\51";aK.ImageTransparency=((q.Default==true) and 1) or 0 ;aK.Parent=aI;a:OnClick(aH,function()q.Callback(((aJ.ImageTransparency==1) and true) or false );if (aJ.ImageTransparency==1) then a:Tweens({{aJ,0.175,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{ImageTransparency=0}},{aK,0.175,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{ImageTransparency=1}}});elseif (aJ.ImageTransparency==0) then a:Tweens({{aJ,0.175,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{ImageTransparency=1}},{aK,0.175,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{ImageTransparency=0}}});end end);local aL={};aL.SetValue=function(self,h)local aM=h;local h=((h==true) and 0) or 1 ;aJ.ImageTransparency=h;aK.ImageTransparency= not aJ.ImageTransparency;q.Callback(aM);end;return aL;end;aC.Slider=function(self,q)local q=q or {} ;q.Text=q.Text or "\83\108\105\100\101\114" ;q.Default=q.Default or 0 ;q.Minimum=q.Minimum or  -100 ;q.Maximum=q.Maximum or 100 ;q.Callback=q.Callback or function()end ;local aN=Instance.new("\70\114\97\109\101");aN.Name="\83\108\105\100\101\114";aN.Size=UDim2.new(1,0,0,20);aN.BorderColor3=Color3.fromRGB(0,0,0);aN.BackgroundTransparency=1;aN.BorderSizePixel=0;aN.BackgroundColor3=Color3.fromRGB(255,255,255);aN.Parent=aA;local G=Instance.new("\84\101\120\116\76\97\98\101\108");G.Name="\84\105\116\108\101";G.AnchorPoint=Vector2.new(0,0.5);G.Size=UDim2.new(1,0,0,12);G.BorderColor3=Color3.fromRGB(0,0,0);G.BackgroundTransparency=1;G.Position=UDim2.new(0,0,0.5,0);G.BorderSizePixel=0;G.BackgroundColor3=Color3.fromRGB(255,255,255);G.FontSize=Enum.FontSize.Size12;G.TextSize=12;G.TextColor3=Color3.fromRGB(255,255,255);G.Text=q.Text;G.Font=Enum.Font.Gotham;G.TextTransparency=0.5;G.TextXAlignment=Enum.TextXAlignment.Left;G.Parent=aN;local aO=Instance.new("\70\114\97\109\101");aO.Name="\73\110\110\101\114\66\97\114";aO.AnchorPoint=Vector2.new(1,0.5);aO.Size=UDim2.new(0.4,0,0,5);aO.BorderColor3=Color3.fromRGB(0,0,0);aO.Position=UDim2.new(1, -45,0.5,0);aO.BorderSizePixel=0;aO.BackgroundColor3=Color3.fromRGB(40,40,40);aO.Parent=aN;local aP=Instance.new("\70\114\97\109\101");aP.Name="\79\117\116\101\114";aP.Size=UDim2.new(((q.Default or q.Minimum) -q.Minimum)/(q.Maximum-q.Minimum) ,0,1,0);aP.BorderColor3=Color3.fromRGB(0,0,0);aP.BorderSizePixel=0;aP.BackgroundColor3=b.ImageColor;aP.Parent=aO;local aF=Instance.new("\70\114\97\109\101");aF.Name="\67\105\114\99\108\101";aF.AnchorPoint=Vector2.new(0.5,0.5);aF.Size=UDim2.new(0,10,0,10);aF.BorderColor3=Color3.fromRGB(0,0,0);aF.Position=UDim2.new(1,0,0.5,0);aF.BorderSizePixel=0;aF.BackgroundColor3=Color3.fromRGB(255,255,255);aF.Parent=aP;local P=Instance.new("\85\73\67\111\114\110\101\114");P.CornerRadius=UDim.new(1,0);P.Parent=aF;local U=Instance.new("\85\73\67\111\114\110\101\114");U.CornerRadius=UDim.new(1,0);U.Parent=aP;local X=Instance.new("\85\73\67\111\114\110\101\114");X.CornerRadius=UDim.new(1,0);X.Parent=aO;local aQ=Instance.new("\84\101\120\116\66\111\120");aQ.Name="\73\110\112\117\116\102\105\101\108\100";aQ.AnchorPoint=Vector2.new(1,0.5);aQ.Size=UDim2.new(0,30,1, -5);aQ.BorderColor3=Color3.fromRGB(0,0,0);aQ.Position=UDim2.new(1, -1,0.5,0);aQ.BorderSizePixel=0;aQ.BackgroundColor3=Color3.fromRGB(30,30,30);aQ.FontSize=Enum.FontSize.Size11;aQ.TextWrapped=true;aQ.PlaceholderColor3=Color3.fromRGB(255,255,255);aQ.TextWrap=true;aQ.TextSize=11;aQ.TextTruncate=Enum.TextTruncate.AtEnd;aQ.TextTransparency=0.5;aQ.TextColor3=Color3.fromRGB(255,255,255);aQ.PlaceholderText="\46\46\46";aQ.Text=q.Default;aQ.Font=Enum.Font.Gotham;aQ.Parent=aN;local O=Instance.new("\85\73\83\116\114\111\107\101");O.ApplyStrokeMode=Enum.ApplyStrokeMode.Border;O.Color=Color3.fromRGB(45,45,45);O.Parent=aQ;local aR=false;local function aS()local aT=(a.Mouse.X-aP.AbsolutePosition.X)/aO.AbsoluteSize.X ;aT=math.clamp(aT,0,1);a:Tween(aP,0.1,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{Size=UDim2.new(aT,0,1,0)});local aU=(((aT * q.Maximum)/q.Maximum) * (q.Maximum-q.Minimum)) + q.Minimum ;aQ.Text=math.floor(aU);q.Callback(tonumber(aQ.Text));end q.Callback(q.Default);aQ.FocusLost:Connect(function()if tonumber(aQ.Text) then local aT=((tonumber(aQ.Text) or q.Minimum) -q.Minimum)/(q.Maximum-q.Minimum) ;aP.Size=UDim2.new(math.clamp(aT,0,1),0,1,0);aQ.Text=math.clamp(tonumber(aQ.Text),q.Minimum,q.Maximum);else local aT=((tonumber(q.Default) or q.Minimum) -q.Minimum)/(q.Maximum-q.Minimum) ;aP.Size=UDim2.new(math.clamp(aT,0,1),0,1,0);aQ.Text=q.Default;end q.Callback(tonumber(aQ.Text));end);aO.InputBegan:Connect(function(p)if (p.UserInputType==Enum.UserInputType.MouseButton1) then aR=true;aS();end end);aO.InputEnded:Connect(function(p)if (p.UserInputType==Enum.UserInputType.MouseButton1) then aR=false;end end);a.Mouse.Move:Connect(function()if aR then aS();end end);local aV={};aV.SetValue=function(self,h)aQ:CaptureFocus();aQ.Text=h;aQ:ReleaseFocus();end;return aV;end;aC.Dropdown=function(self,q)local q=q or {} ;q.Text=q.Text or "\68\114\111\112\100\111\119\110" ;q.List=q.List or {} ;q.Default=q.Default or 1 ;q.Callback=q.Callback or function()end ;local aW=Instance.new("\70\114\97\109\101");aW.Name="\68\114\111\112\100\111\119\110";aW.Size=UDim2.new(1,0,0,20);aW.BorderColor3=Color3.fromRGB(0,0,0);aW.BackgroundTransparency=1;aW.BorderSizePixel=0;aW.BackgroundColor3=Color3.fromRGB(255,255,255);aW.Parent=aA;local G=Instance.new("\84\101\120\116\76\97\98\101\108");G.Name="\84\105\116\108\101";G.AnchorPoint=Vector2.new(0,0.5);G.Size=UDim2.new(0,200,0,12);G.BorderColor3=Color3.fromRGB(0,0,0);G.BackgroundTransparency=1;G.Position=UDim2.new(0,0,0.5,0);G.BorderSizePixel=0;G.BackgroundColor3=Color3.fromRGB(255,255,255);G.FontSize=Enum.FontSize.Size12;G.TextSize=12;G.TextColor3=Color3.fromRGB(255,255,255);G.Text=q.Text;G.Font=Enum.Font.Gotham;G.TextTransparency=0.5;G.TextXAlignment=Enum.TextXAlignment.Left;G.Parent=aW;local aI=Instance.new("\70\114\97\109\101");aI.Name="\66\111\120";aI.AnchorPoint=Vector2.new(1,0.5);aI.Size=UDim2.new(0,15,0,20);aI.BorderColor3=Color3.fromRGB(0,0,0);aI.BackgroundTransparency=1;aI.Position=UDim2.new(1,0,0.5,0);aI.BorderSizePixel=0;aI.BackgroundColor3=Color3.fromRGB(255,255,255);aI.Parent=aW;local aj=Instance.new("\73\109\97\103\101\76\97\98\101\108");aj.Name="\73\99\111\110";aj.ZIndex=2;aj.AnchorPoint=Vector2.new(0.5,0.5);aj.Size=UDim2.new(0,20,0,20);aj.BackgroundTransparency=1;aj.Position=UDim2.new(0.5,0,0.5,0);aj.ImageRectOffset=Vector2.new(324,524);aj.ImageRectSize=Vector2.new(36,36);aj.Image="\114\98\120\97\115\115\101\116\105\100\58\47\47\51\57\50\54\51\48\55\57\55\49";aj.Parent=aI;local aX=Instance.new("\70\114\97\109\101");aX.Name="\67\111\110\116\101\110\116\115";aX.AnchorPoint=Vector2.new(1,0);aX.Size=UDim2.new(0.5,0,0,0);aX.ClipsDescendants=true;aX.BorderColor3=Color3.fromRGB(0,0,0);aX.Position=UDim2.new(1,0,1,0);aX.BorderSizePixel=0;aX.BackgroundColor3=Color3.fromRGB(24,24,24);aX.ZIndex=1000;aX.Parent=aW;local O=Instance.new("\85\73\83\116\114\111\107\101");O.Transparency=1;O.Thickness=1;O.Color=Color3.fromRGB(45,45,45);O.Parent=aX;local I=Instance.new("\85\73\80\97\100\100\105\110\103");I.PaddingLeft=UDim.new(0,5);I.Parent=aX;local aa=Instance.new("\85\73\76\105\115\116\76\97\121\111\117\116");aa.SortOrder=Enum.SortOrder.LayoutOrder;aa.Parent=aX;if q.List[q.Default] then q.Callback(q.List[q.Default]);O.Transparency=1;aX.AutomaticSize=Enum.AutomaticSize.None;a:Tween(aj,0.175,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{Rotation=0});G.Text=q.Text   .. "\32\45\32"   .. q.List[q.Default] ;end local aY={};for l,aZ in pairs(q.List) do local a_=Instance.new("\84\101\120\116\76\97\98\101\108");a_.Name=aZ;a_.Size=UDim2.new(1,0,0,25);a_.BorderColor3=Color3.fromRGB(0,0,0);a_.BackgroundTransparency=1;a_.BorderSizePixel=0;a_.BackgroundColor3=Color3.fromRGB(255,255,255);a_.FontSize=Enum.FontSize.Size12;a_.TextSize=12;a_.TextColor3=Color3.fromRGB(255,255,255);a_.Font=Enum.Font.Gotham;a_.Text=aZ;a_.TextTransparency=0.5;a_.TextXAlignment=Enum.TextXAlignment.Left;a_.ZIndex=1000;a_.Parent=aX;table.insert(aY,a_);a:OnClick(a_,function()q.Callback(aZ);O.Transparency=1;aX.AutomaticSize=Enum.AutomaticSize.None;a:Tween(aj,0.175,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{Rotation=0});G.Text=q.Text   .. "\32\45\32"   .. aZ ;end);end a:OnClick(aI,function()if (aj.Rotation==0) then O.Transparency=0;aX.AutomaticSize=Enum.AutomaticSize.Y;a:Tween(aj,0.175,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{Rotation=180});elseif (aj.Rotation==180) then O.Transparency=1;aX.AutomaticSize=Enum.AutomaticSize.None;a:Tween(aj,0.175,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{Rotation=0});end end);local b0={};b0.Refresh=function(self,b1)for l,b2 in pairs(aY) do b2:Destroy();end for l,aZ in pairs(b1) do local a_=Instance.new("\84\101\120\116\76\97\98\101\108");a_.Name=aZ;a_.Size=UDim2.new(1,0,0,25);a_.BorderColor3=Color3.fromRGB(0,0,0);a_.BackgroundTransparency=1;a_.BorderSizePixel=0;a_.BackgroundColor3=Color3.fromRGB(255,255,255);a_.FontSize=Enum.FontSize.Size12;a_.TextSize=12;a_.TextColor3=Color3.fromRGB(255,255,255);a_.Font=Enum.Font.Gotham;a_.Text=aZ;a_.TextTransparency=0.5;a_.TextXAlignment=Enum.TextXAlignment.Left;a_.ZIndex=1000;a_.Parent=aX;table.insert(aY,a_);a:OnClick(a_,function()q.Callback(aZ);O.Transparency=1;aX.AutomaticSize=Enum.AutomaticSize.None;a:Tween(aj,0.175,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{Rotation=0});G.Text=q.Text   .. "\32\45\32"   .. aZ ;end);end G.Text=q.Text;end;return b0;end;aC.InputField=function(self,q)local q=q or {} ;q.Text=q.Text or "\73\110\112\117\116\70\105\101\108\100" ;q.Default=q.Default or "" ;q.Callback=q.Callback or function()end ;local b3=Instance.new("\70\114\97\109\101");b3.Name="\73\110\112\117\116\70\105\101\108\100";b3.Size=UDim2.new(1,0,0,20);b3.BorderColor3=Color3.fromRGB(0,0,0);b3.BackgroundTransparency=1;b3.BorderSizePixel=0;b3.BackgroundColor3=Color3.fromRGB(255,255,255);b3.Parent=aA;local G=Instance.new("\84\101\120\116\76\97\98\101\108");G.Name="\84\105\116\108\101";G.AnchorPoint=Vector2.new(0,0.5);G.Size=UDim2.new(1,0,0,12);G.BorderColor3=Color3.fromRGB(0,0,0);G.BackgroundTransparency=1;G.Position=UDim2.new(0,0,0.5,0);G.BorderSizePixel=0;G.BackgroundColor3=Color3.fromRGB(255,255,255);G.FontSize=Enum.FontSize.Size12;G.TextSize=12;G.TextColor3=Color3.fromRGB(255,255,255);G.Text=q.Text;G.Font=Enum.Font.Gotham;G.TextTransparency=0.5;G.TextXAlignment=Enum.TextXAlignment.Left;G.Parent=b3;local aI=Instance.new("\84\101\120\116\66\111\120");aI.Name="\66\111\120";aI.AnchorPoint=Vector2.new(1,0.5);aI.AutomaticSize=Enum.AutomaticSize.X;aI.Size=UDim2.new(0,30,1, -5);aI.BorderColor3=Color3.fromRGB(0,0,0);aI.Position=UDim2.new(1, -1,0.5,0);aI.BorderSizePixel=0;aI.BackgroundColor3=Color3.fromRGB(30,30,30);aI.FontSize=Enum.FontSize.Size11;aI.PlaceholderColor3=Color3.fromRGB(255,255,255);aI.TextSize=11;aI.TextTransparency=0.5;aI.TextColor3=Color3.fromRGB(255,255,255);aI.PlaceholderText="\46\46\46";aI.Text=q.Default;aI.Font=Enum.Font.Gotham;aI.Parent=b3;local O=Instance.new("\85\73\83\116\114\111\107\101");O.ApplyStrokeMode=Enum.ApplyStrokeMode.Border;O.Color=Color3.fromRGB(45,45,45);O.Parent=aI;local I=Instance.new("\85\73\80\97\100\100\105\110\103");I.PaddingLeft=UDim.new(0,3);I.PaddingRight=UDim.new(0,3);I.Parent=aI;aI.Focused:Connect(function()a:Tween(O,0.25,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{Color=b.ImageColor});end);aI.FocusLost:Connect(function()a:Tween(O,0.175,Enum.EasingStyle.Sine,Enum.EasingDirection.Out,{Color=Color3.fromRGB(45,45,45)});q.Callback(aI.Text);end);end;return aC;end;return ay;end;return ac;end;return a1;end;return a;
+local TweenService = game:GetService("TweenService")
+
+Library.LastTab = nil
+Library.Mouse = game.Players.LocalPlayer:GetMouse()
+
+function Library:Tween(Object, Time, EasingS, EasingD, Value)
+	local newTween = TweenService:Create(Object, TweenInfo.new(Time, EasingS, EasingD), Value)
+	newTween:Play()
+
+	return newTween
+end
+
+function Library:Tweens(Array)
+	local Tweens = {}
+
+	for _, Tween in pairs(Array) do
+		local newTween = Library:Tween(unpack(Tween))
+
+		table.insert(Tweens, newTween)
+	end
+
+	return Tweens
+end
+
+function Library:OnClick(GuiBase, Callback)
+	if GuiBase:IsA("GuiBase2d") then
+		GuiBase.Active = true
+		GuiBase.InputBegan:Connect(function(Input)
+			if Input.UserInputType == Enum.UserInputType.MouseButton1 then
+				Callback()
+			end
+		end)
+	end
+end
+
+function Library:Load(Options)
+	local Options = Options or {}
+	Options.RemoveLastSession = Options.RemoveLastSession or true
+	Options.KeySystem = Options.KeySystem or {
+		Changelog = "wee",
+		IsRequired = true,
+		Keys = {
+			"PokeSterk",
+			"pokesterk",
+			"dhruv"
+		}
+	}
+
+	if Options.RemoveLastSession and shared.__namelesswindow then
+		shared.__namelesswindow:Destroy()
+		shared.__namelesswindow = nil
+	end
+
+	shared.__namelesswindow = NamelessWindow
+	
+	local NamelessWindow = Instance.new("ScreenGui")
+	NamelessWindow.Name = game:GetService("HttpService"):GenerateGUID(false)
+	NamelessWindow.ResetOnSpawn = false
+	NamelessWindow.Parent = (checkcaller and typeof(checkcaller) == "function") and game.CoreGui or game.Players.LocalPlayer.PlayerGui
+	
+	shared.__namelesswindow = NamelessWindow
+	
+	local IsCorrectKey = false
+	
+	if Options.KeySystem and Options.KeySystem.IsRequired then
+		local thumbnailType = Enum.ThumbnailType.HeadShot
+		local thumbnailSize = Enum.ThumbnailSize.Size420x420
+
+		local content, isReady = game.Players:GetUserThumbnailAsync(game.Players.LocalPlayer.UserId, thumbnailType, thumbnailSize)
+		
+		local WaveSpeed = 5
+		
+		local KeySystem = Instance.new("Frame")
+		KeySystem.Name = "KeySystem"
+		KeySystem.AnchorPoint = Vector2.new(0.5, 0)
+		KeySystem.Size = UDim2.new(0, 450, 0, 350)
+		KeySystem.Position = UDim2.new(0.5, 0, 1, 40)
+		KeySystem.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		KeySystem.BorderSizePixel = 0
+		KeySystem.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+		KeySystem.Parent = NamelessWindow
+
+		local Right = Instance.new("Frame")
+		Right.Name = "Right"
+		Right.AnchorPoint = Vector2.new(1, 0)
+		Right.Size = UDim2.new(0, 200, 1, 0)
+		Right.ClipsDescendants = true
+		Right.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Right.Position = UDim2.new(1, 0, 0, 0)
+		Right.BorderSizePixel = 0
+		Right.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		Right.Parent = KeySystem
+
+		local Frame = Instance.new("Frame")
+		Frame.Name = "1"
+		Frame.ZIndex = 2
+		Frame.AnchorPoint = Vector2.new(0, 1)
+		Frame.Size = UDim2.new(2, 0, 0, 100)
+		Frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		Frame.Position = UDim2.new(0, 0, 1, 0)
+		Frame.BorderSizePixel = 0
+		Frame.BackgroundColor3 = Color3.fromRGB(255, 60, 60)
+		Frame.Parent = Right
+
+		local ImageLabel = Instance.new("ImageLabel")
+		ImageLabel.Name = "1"
+		ImageLabel.AnchorPoint = Vector2.new(0, 1)
+		ImageLabel.Size = UDim2.new(0.5, 0, 0, 22)
+		ImageLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		ImageLabel.BackgroundTransparency = 1
+		ImageLabel.Position = UDim2.new(0, 0, 0, 1)
+		ImageLabel.BorderSizePixel = 0
+		ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 60, 60)
+		ImageLabel.ScaleType = Enum.ScaleType.Fit
+		ImageLabel.ImageColor3 = Color3.fromRGB(255, 60, 60)
+		ImageLabel.Image = "rbxassetid://13296472401"
+		ImageLabel.Parent = Frame
+
+		local ImageLabel1 = Instance.new("ImageLabel")
+		ImageLabel1.Name = "2"
+		ImageLabel1.AnchorPoint = Vector2.new(1, 1)
+		ImageLabel1.Size = UDim2.new(0.5, 0, 0, 22)
+		ImageLabel1.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		ImageLabel1.BackgroundTransparency = 1
+		ImageLabel1.Position = UDim2.new(1, 0, 0, 1)
+		ImageLabel1.BorderSizePixel = 0
+		ImageLabel1.BackgroundColor3 = Color3.fromRGB(255, 60, 60)
+		ImageLabel1.ScaleType = Enum.ScaleType.Fit
+		ImageLabel1.ImageColor3 = Color3.fromRGB(255, 60, 60)
+		ImageLabel1.Image = "rbxassetid://13296472401"
+		ImageLabel1.Parent = Frame
+
+		local LocalScript = Instance.new("LocalScript")
+		LocalScript.Parent = Frame
+
+		local Frame1 = Instance.new("Frame")
+		Frame1.Name = "2"
+		Frame1.AnchorPoint = Vector2.new(0.5, 1)
+		Frame1.Size = UDim2.new(2, 0, 0, 100)
+		Frame1.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		Frame1.BackgroundTransparency = 0.5
+		Frame1.Position = UDim2.new(0, 0, 1, -10)
+		Frame1.BorderSizePixel = 0
+		Frame1.BackgroundColor3 = Color3.fromRGB(255, 60, 60)
+		Frame1.Parent = Right
+		
+		spawn(function()
+			while task.wait() do
+				Library:Tween(Frame, WaveSpeed, Enum.EasingStyle.Linear, Enum.EasingDirection.Out, {AnchorPoint = Vector2.new(0.5, 1)}).Completed:Wait()
+
+				Frame.AnchorPoint = Vector2.new(0, 1)
+			end
+		end)
+		
+		spawn(function()
+			while task.wait() do
+				Library:Tween(Frame1, WaveSpeed * 2, Enum.EasingStyle.Linear, Enum.EasingDirection.Out, {AnchorPoint = Vector2.new(0, 1)}).Completed:Wait()
+
+				Frame.AnchorPoint = Vector2.new(0.5, 1)
+			end
+		end)
+
+		local ImageLabel2 = Instance.new("ImageLabel")
+		ImageLabel2.Name = "1"
+		ImageLabel2.AnchorPoint = Vector2.new(0, 1)
+		ImageLabel2.Size = UDim2.new(0.5, 0, 0, 22)
+		ImageLabel2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		ImageLabel2.BackgroundTransparency = 1
+		ImageLabel2.Position = UDim2.new(0, 0, 0, 1)
+		ImageLabel2.BorderSizePixel = 0
+		ImageLabel2.BackgroundColor3 = Color3.fromRGB(255, 60, 60)
+		ImageLabel2.ScaleType = Enum.ScaleType.Fit
+		ImageLabel2.ImageTransparency = 0.5
+		ImageLabel2.ImageColor3 = Color3.fromRGB(255, 60, 60)
+		ImageLabel2.Image = "rbxassetid://13296472401"
+		ImageLabel2.Parent = Frame1
+
+		local ImageLabel3 = Instance.new("ImageLabel")
+		ImageLabel3.Name = "2"
+		ImageLabel3.AnchorPoint = Vector2.new(1, 1)
+		ImageLabel3.Size = UDim2.new(0.5, 0, 0, 22)
+		ImageLabel3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		ImageLabel3.BackgroundTransparency = 1
+		ImageLabel3.Position = UDim2.new(1, 0, 0, 1)
+		ImageLabel3.BorderSizePixel = 0
+		ImageLabel3.BackgroundColor3 = Color3.fromRGB(255, 60, 60)
+		ImageLabel3.ScaleType = Enum.ScaleType.Fit
+		ImageLabel3.ImageTransparency = 0.5
+		ImageLabel3.ImageColor3 = Color3.fromRGB(255, 60, 60)
+		ImageLabel3.Image = "rbxassetid://13296472401"
+		ImageLabel3.Parent = Frame1
+
+		local Title = Instance.new("TextLabel")
+		Title.Name = "Title"
+		Title.ZIndex = 2
+		Title.AutomaticSize = Enum.AutomaticSize.Y
+		Title.Size = UDim2.new(1, 0, 0, 0)
+		Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Title.BackgroundTransparency = 1
+		Title.Position = UDim2.new(0, 0, 0, 10)
+		Title.BorderSizePixel = 0
+		Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Title.FontSize = Enum.FontSize.Size18
+		Title.TextSize = 15
+		Title.TextColor3 = Color3.fromRGB(255, 60, 60)
+		Title.Text = "⛔🔑 Key System ✋🔐"
+		Title.Font = Enum.Font.GothamBold
+		Title.Parent = Right
+
+		local Log = Instance.new("TextLabel")
+		Log.Name = "Log"
+		Log.Size = UDim2.new(1, 0, 1, -30)
+		Log.ClipsDescendants = true
+		Log.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Log.BackgroundTransparency = 1
+		Log.Position = UDim2.new(0, 0, 0, 30)
+		Log.BorderSizePixel = 0
+		Log.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Log.FontSize = Enum.FontSize.Size14
+		Log.TextTruncate = Enum.TextTruncate.AtEnd
+		Log.TextSize = 13
+		Log.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Log.TextYAlignment = Enum.TextYAlignment.Top
+		Log.Text = Options.KeySystem.Changelog
+		Log.TextWrapped = true
+		Log.TextWrap = true
+		Log.Font = Enum.Font.Gotham
+		Log.TextTransparency = 0.5
+		Log.TextXAlignment = Enum.TextXAlignment.Left
+		Log.LineHeight = 1.5
+		Log.Parent = Right
+
+		local UIPadding = Instance.new("UIPadding")
+		UIPadding.PaddingLeft = UDim.new(0, 20)
+		UIPadding.Parent = Log
+
+		local Shadow = Instance.new("ImageLabel")
+		Shadow.Name = "Shadow"
+		Shadow.ZIndex = 0
+		Shadow.AnchorPoint = Vector2.new(0.5, 0.5)
+		Shadow.Size = UDim2.new(1, 47, 1, 47)
+		Shadow.BackgroundTransparency = 1
+		Shadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+		Shadow.BorderSizePixel = 0
+		Shadow.ScaleType = Enum.ScaleType.Slice
+		Shadow.ImageTransparency = 0.5
+		Shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+		Shadow.Image = "rbxassetid://6015897843"
+		Shadow.SliceCenter = Rect.new(49, 49, 450, 450)
+		Shadow.Parent = KeySystem
+
+		local Left = Instance.new("Frame")
+		Left.Name = "Left"
+		Left.Size = UDim2.new(1, -200, 1, 0)
+		Left.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Left.BackgroundTransparency = 1
+		Left.BorderSizePixel = 0
+		Left.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Left.Parent = KeySystem
+
+		local User = Instance.new("Frame")
+		User.Name = "User"
+		User.AnchorPoint = Vector2.new(0.5, 0)
+		User.Size = UDim2.new(0, 100, 0, 100)
+		User.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		User.BackgroundTransparency = 1
+		User.Position = UDim2.new(0.5, 0, 0, 50)
+		User.BorderSizePixel = 0
+		User.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		User.Parent = Left
+
+		local Image = Instance.new("ImageLabel")
+		Image.Name = "Image"
+		Image.AnchorPoint = Vector2.new(0.5, 0.5)
+		Image.Size = UDim2.new(1, -20, 1, -20)
+		Image.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Image.BackgroundTransparency = 1
+		Image.Position = UDim2.new(0.5, 0, 0.5, 0)
+		Image.BorderSizePixel = 0
+		Image.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Image.ScaleType = Enum.ScaleType.Fit
+		Image.Image = content
+		Image.Parent = User
+		
+		local UICornerImage = Instance.new("UICorner")
+		UICornerImage.CornerRadius = UDim.new(1, 0)
+		UICornerImage.Parent = Image
+
+		local UIStroke = Instance.new("UIStroke")
+		UIStroke.Thickness = 2
+		UIStroke.Color = Color3.fromRGB(255, 60, 60)
+		UIStroke.Parent = User
+
+		local UICorner = Instance.new("UICorner")
+		UICorner.CornerRadius = UDim.new(1, 0)
+		UICorner.Parent = User
+
+		local Keyinput = Instance.new("TextBox")
+		Keyinput.Name = "Keyinput"
+		Keyinput.AnchorPoint = Vector2.new(0.5, 0.5)
+		Keyinput.Size = UDim2.new(0, 200, 0, 25)
+		Keyinput.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Keyinput.BackgroundTransparency = 1
+		Keyinput.Position = UDim2.new(0.5, 0, 0.5, 10)
+		Keyinput.BorderSizePixel = 0
+		Keyinput.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Keyinput.FontSize = Enum.FontSize.Size14
+		Keyinput.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+		Keyinput.TextSize = 13
+		Keyinput.TextTransparency = 0.5
+		Keyinput.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Keyinput.Text = "Key here..."
+		Keyinput.CursorPosition = -1
+		Keyinput.Font = Enum.Font.Gotham
+		Keyinput.Parent = Left
+
+		local UIStroke1 = Instance.new("UIStroke")
+		UIStroke1.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+		UIStroke1.Color = Color3.fromRGB(40, 40, 40)
+		UIStroke1.Parent = Keyinput
+
+		local EnterKey = Instance.new("Frame")
+		EnterKey.Name = "EnterKey"
+		EnterKey.AnchorPoint = Vector2.new(0.5, 0.5)
+		EnterKey.Size = UDim2.new(0, 80, 0, 25)
+		EnterKey.Selectable = true
+		EnterKey.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		EnterKey.Position = UDim2.new(0.5, -45, 0.5, 45)
+		EnterKey.Active = true
+		EnterKey.BorderSizePixel = 0
+		EnterKey.BackgroundColor3 = Color3.fromRGB(255, 60, 60)
+		EnterKey.Parent = Left
+
+		local Title1 = Instance.new("TextLabel")
+		Title1.Name = "Title"
+		Title1.AnchorPoint = Vector2.new(0.5, 0.5)
+		Title1.Size = UDim2.new(1, 0, 0, 25)
+		Title1.Selectable = true
+		Title1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Title1.BackgroundTransparency = 1
+		Title1.Position = UDim2.new(0.5, 0, 0.5, 0)
+		Title1.Active = true
+		Title1.BorderSizePixel = 0
+		Title1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Title1.FontSize = Enum.FontSize.Size14
+		Title1.TextSize = 13
+		Title1.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Title1.Text = "Enter Key"
+		Title1.Font = Enum.Font.Gotham
+		Title1.Parent = EnterKey
+
+		local UICorner1 = Instance.new("UICorner")
+		UICorner1.CornerRadius = UDim.new(0, 4)
+		UICorner1.Parent = EnterKey
+
+		local GetKey = Instance.new("Frame")
+		GetKey.Name = "GetKey"
+		GetKey.AnchorPoint = Vector2.new(0.5, 0.5)
+		GetKey.Size = UDim2.new(0, 80, 0, 25)
+		GetKey.Selectable = true
+		GetKey.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		GetKey.Position = UDim2.new(0.5, 45, 0.5, 45)
+		GetKey.Active = true
+		GetKey.BorderSizePixel = 0
+		GetKey.BackgroundColor3 = Color3.fromRGB(255, 60, 60)
+		GetKey.Parent = Left
+
+		local Title2 = Instance.new("TextLabel")
+		Title2.Name = "Title"
+		Title2.AnchorPoint = Vector2.new(0.5, 0.5)
+		Title2.Size = UDim2.new(1, 0, 0, 25)
+		Title2.Selectable = true
+		Title2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Title2.BackgroundTransparency = 1
+		Title2.Position = UDim2.new(0.5, 0, 0.5, 0)
+		Title2.Active = true
+		Title2.BorderSizePixel = 0
+		Title2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Title2.FontSize = Enum.FontSize.Size14
+		Title2.TextSize = 13
+		Title2.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Title2.Text = "Get Key"
+		Title2.Font = Enum.Font.Gotham
+		Title2.Parent = GetKey
+
+		local UICorner2 = Instance.new("UICorner")
+		UICorner2.CornerRadius = UDim.new(0, 4)
+		UICorner2.Parent = GetKey
+		
+		Library:Tween(KeySystem, 0.25, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {AnchorPoint = Vector2.new(0.5, 0.5), Position = UDim2.new(0.5, 0, 0.5, 0)})
+		
+		Library:OnClick(EnterKey, function()
+			if table.find(Options.KeySystem.Keys, Keyinput.Text) then
+				Library:Tween(KeySystem, 0.5, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {AnchorPoint = Vector2.new(0.5, 0), Position = UDim2.new(0.5, 0, 1, 40)})
+				wait(0.5)
+				KeySystem:Destroy()
+				IsCorrectKey = true
+			else
+				spawn(function()
+					local ShakeIntensity = 10
+					for Repeat = 1, 5 do
+						local RandomX, RandomY = math.random(-ShakeIntensity, ShakeIntensity), math.random(-ShakeIntensity, ShakeIntensity)
+						
+						Library:Tween(KeySystem, 0.02, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, {Position = UDim2.new(0.5, RandomX, 0.5, RandomY)}).Completed:Wait()
+					end
+					
+					Library:Tween(KeySystem, 0.08, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, {Position = UDim2.new(0.5, 0, 0.5, 0)})
+				end)
+				
+				Library:Tween(Keyinput, 0.25, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {TextColor3 = Color3.fromRGB(255, 10, 10)})
+				wait(0.25)
+				Library:Tween(Keyinput, 0.175, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {TextColor3 = Color3.fromRGB(255, 255, 255)})
+			end
+		end)
+	end
+	
+	repeat task.wait() until IsCorrectKey
+
+	local LoadFunctions = {}
+	
+	function LoadFunctions:Window(Options)
+		local Options = Options or {}
+		Options.Title = Options.Title or "Untitled"
+		Options.Description = Options.Description or "No description."
+
+		Options.User = Options.User or {
+			Username = game.Players.LocalPlayer.Name,
+			Membership = "Skidder"
+		}
+
+		local Main = Instance.new("Frame")
+		Main.Name = "Main"
+		Main.Active = true
+		Main.AnchorPoint = Vector2.new(0, 0.5)
+		Main.Size = UDim2.new(0, 650, 0, 500)
+		Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Main.Position = UDim2.new(1, 40, 0.5, 0)
+		Main.BorderSizePixel = 0
+		Main.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+		Main.Parent = NamelessWindow
+		
+		Library:Tween(Main, 0.8, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Position = UDim2.new(0.5, 0, 0.5, 0), AnchorPoint = Vector2.new(0.5, 0.5)})
+
+		local IsDragging = false
+		
+		Library.Mouse.Move:Connect(function()
+			if IsDragging then
+				Library:Tween(Main, 0.1, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Position = UDim2.new(0, Library.Mouse.X - Main.Parent.AbsolutePosition.X, 0, Library.Mouse.Y - Main.Parent.AbsolutePosition.Y)})
+			end
+		end)
+
+		local Left = Instance.new("Frame")
+		Left.Name = "Left"
+		Left.Size = UDim2.new(0, 200, 1, 0)
+		Left.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Left.BorderSizePixel = 0
+		Left.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+		Left.Parent = Main
+		
+		Left.InputBegan:Connect(function(Input)
+			if Input.UserInputType == Enum.UserInputType.MouseButton1 then
+				Main.AnchorPoint = Vector2.new((Library.Mouse.X - Main.AbsolutePosition.X) / Main.AbsoluteSize.X, (Library.Mouse.Y - Main.AbsolutePosition.Y) / Main.AbsoluteSize.Y)
+				Main.Position = UDim2.new(0, Library.Mouse.X - Main.Parent.AbsolutePosition.X, 0, Library.Mouse.Y - Main.Parent.AbsolutePosition.Y)
+				IsDragging = true
+			end
+		end)
+
+		Left.InputEnded:Connect(function(Input)
+			if Input.UserInputType == Enum.UserInputType.MouseButton1 then
+				IsDragging = false
+			end
+		end)
+
+		local Title = Instance.new("TextLabel")
+		Title.Name = "Title"
+		Title.ZIndex = 2
+		Title.AutomaticSize = Enum.AutomaticSize.Y
+		Title.Size = UDim2.new(1, -15, 0, 0)
+		Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Title.BackgroundTransparency = 1
+		Title.Position = UDim2.new(0, 15, 0, 15)
+		Title.BorderSizePixel = 0
+		Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Title.FontSize = Enum.FontSize.Size18
+		Title.TextSize = 15
+		Title.TextColor3 = Theme.TextColor
+		Title.Text = Options.Title
+		Title.Font = Enum.Font.GothamBold
+		Title.TextXAlignment = Enum.TextXAlignment.Left
+		Title.Parent = Left
+
+		local Subtitle = Instance.new("TextLabel")
+		Subtitle.Name = "Subtitle"
+		Subtitle.ZIndex = 2
+		Subtitle.AutomaticSize = Enum.AutomaticSize.Y
+		Subtitle.Size = UDim2.new(1, -15, 0, 0)
+		Subtitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Subtitle.BackgroundTransparency = 1
+		Subtitle.Position = UDim2.new(0, 15, 0, 32)
+		Subtitle.BorderSizePixel = 0
+		Subtitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Subtitle.FontSize = Enum.FontSize.Size12
+		Subtitle.TextSize = 12
+		Subtitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Subtitle.Text = Options.Description
+		Subtitle.Font = Enum.Font.Gotham
+		Subtitle.TextTransparency = 0.5
+		Subtitle.TextXAlignment = Enum.TextXAlignment.Left
+		Subtitle.Parent = Left
+
+		local TabButtonContainer = Instance.new("Frame")
+		TabButtonContainer.Name = "TabButtonContainer"
+		TabButtonContainer.ZIndex = 2
+		TabButtonContainer.Size = UDim2.new(1, 0, 1, -50)
+		TabButtonContainer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TabButtonContainer.BackgroundTransparency = 1
+		TabButtonContainer.Position = UDim2.new(0, 0, 0, 50)
+		TabButtonContainer.BorderSizePixel = 0
+		TabButtonContainer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TabButtonContainer.Parent = Left
+
+		local Local = Instance.new("Frame")
+		Local.Name = "Local"
+		Local.ZIndex = 2
+		Local.AnchorPoint = Vector2.new(0.5, 1)
+		Local.Size = UDim2.new(1, 0, 0, 50)
+		Local.ClipsDescendants = true
+		Local.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Local.Position = UDim2.new(0.5, 0, 1, 0)
+		Local.BorderSizePixel = 0
+		Local.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+		Local.Parent = TabButtonContainer
+
+		local User = Instance.new("TextLabel")
+		User.Name = "User"
+		User.ZIndex = 2
+		User.Size = UDim2.new(0, 200, 0, 15)
+		User.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		User.BackgroundTransparency = 1
+		User.Position = UDim2.new(0, 0, 0, 10)
+		User.BorderSizePixel = 0
+		User.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		User.FontSize = Enum.FontSize.Size18
+		User.TextSize = 15
+		User.TextColor3 = Color3.fromRGB(255, 255, 255)
+		User.Text = Options.User.Username
+		User.Font = Enum.Font.GothamMedium
+		User.TextXAlignment = Enum.TextXAlignment.Left
+		User.Parent = Local
+
+		local UIPadding = Instance.new("UIPadding")
+		UIPadding.PaddingLeft = UDim.new(0, 10)
+		UIPadding.Parent = User
+
+		local Membership = Instance.new("TextLabel")
+		Membership.Name = "Membership"
+		Membership.ZIndex = 2
+		Membership.Size = UDim2.new(0, 200, 0, 15)
+		Membership.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Membership.BackgroundTransparency = 1
+		Membership.Position = UDim2.new(0, 0, 0, 22)
+		Membership.BorderSizePixel = 0
+		Membership.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Membership.FontSize = Enum.FontSize.Size12
+		Membership.TextSize = 12
+		Membership.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Membership.Text = Options.User.Membership
+		Membership.Font = Enum.Font.Gotham
+		Membership.TextTransparency = 0.5
+		Membership.TextXAlignment = Enum.TextXAlignment.Left
+		Membership.Parent = Local
+
+		local UIPadding1 = Instance.new("UIPadding")
+		UIPadding1.PaddingLeft = UDim.new(0, 10)
+		UIPadding1.Parent = Membership
+
+		local Scroller = Instance.new("ScrollingFrame")
+		Scroller.Name = "Scroller"
+		Scroller.ZIndex = 2
+		Scroller.AnchorPoint = Vector2.new(0.5, 1)
+		Scroller.Size = UDim2.new(1, -10, 1, -60)
+		Scroller.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Scroller.BackgroundTransparency = 1
+		Scroller.Position = UDim2.new(0.5, 0, 1, -50)
+		Scroller.Active = true
+		Scroller.BorderSizePixel = 0
+		Scroller.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Scroller.AutomaticCanvasSize = Enum.AutomaticSize.Y
+		Scroller.CanvasSize = UDim2.new(0, 0, 0, 0)
+		Scroller.MidImage = "rbxassetid://14622773757"
+		Scroller.ScrollBarThickness = 2
+		Scroller.Parent = TabButtonContainer
+
+		local UIListLayout = Instance.new("UIListLayout")
+		UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+		UIListLayout.Parent = Scroller
+
+		local Right = Instance.new("Frame")
+		Right.Name = "Right"
+		Right.AnchorPoint = Vector2.new(1, 0.5)
+		Right.Size = UDim2.new(1, -200, 1, 0)
+		Right.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Right.BackgroundTransparency = 1
+		Right.Position = UDim2.new(1, 0, 0.5, 0)
+		Right.BorderSizePixel = 0
+		Right.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Right.Parent = Main
+
+		local TabContainer = Instance.new("Frame")
+		TabContainer.Name = "TabContainer"
+		TabContainer.AnchorPoint = Vector2.new(0.5, 0.5)
+		TabContainer.Size = UDim2.new(1, 0, 1, 0)
+		TabContainer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TabContainer.BackgroundTransparency = 1
+		TabContainer.Position = UDim2.new(0.5, 0, 0.5, 0)
+		TabContainer.BorderSizePixel = 0
+		TabContainer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TabContainer.ClipsDescendants = true
+		TabContainer.Parent = Right
+
+		local Shadow = Instance.new("ImageLabel")
+		Shadow.Name = "Shadow"
+		Shadow.ZIndex = 0
+		Shadow.AnchorPoint = Vector2.new(0.5, 0.5)
+		Shadow.Size = UDim2.new(1, 47, 1, 47)
+		Shadow.BackgroundTransparency = 1
+		Shadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+		Shadow.BorderSizePixel = 0
+		Shadow.ScaleType = Enum.ScaleType.Slice
+		Shadow.ImageTransparency = 0.5
+		Shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+		Shadow.Image = "rbxassetid://6015897843"
+		Shadow.SliceCenter = Rect.new(49, 49, 450, 450)
+		Shadow.Parent = Main
+
+		local WindowFunctions = {}
+		
+		function WindowFunctions:CloseTabs(Except)
+			for _, Child in pairs(Scroller:GetChildren()) do
+				if Child:IsA("Frame") and Child.Name:sub(1, 10) == "TabButton_" and Child ~= Except and TabContainer:FindFirstChild("Tab_" .. Child.Name:sub(11, #Child.Name)) then
+					local Tab = TabContainer:FindFirstChild("Tab_" .. Child.Name:sub(11, #Child.Name))
+
+					Library:Tweens({
+						{Child.Title, 0.175, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {TextTransparency = 0.5}},
+						{Child.Image, 0.175, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {ImageTransparency = 0.5}},
+						{Tab, 0.25, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Position = UDim2.new(0, 0, 1, 0)}}
+					})
+				end
+			end
+		end
+
+		function WindowFunctions:Tab(Options)
+			local Options = Options or {}
+			Options.Title = Options.Title or "???"
+			Options.Description = Options.Description or "???"
+			Options.Image = Options.Image or "rbxassetid://10723365987"
+
+			local TabButton = Instance.new("Frame")
+			TabButton.Name = "TabButton_" .. Options.Title
+			TabButton.ZIndex = 2
+			TabButton.Size = UDim2.new(1, 0, 0, 30)
+			TabButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+			TabButton.BackgroundTransparency = 1
+			TabButton.BorderSizePixel = 0
+			TabButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			TabButton.Parent = Scroller
+
+			local Image = Instance.new("ImageLabel")
+			Image.Name = "Image"
+			Image.ZIndex = 2
+			Image.AnchorPoint = Vector2.new(0, 0.5)
+			Image.Size = UDim2.new(0, 15, 0, 15)
+			Image.BorderColor3 = Color3.fromRGB(0, 0, 0)
+			Image.BackgroundTransparency = 1
+			Image.Position = UDim2.new(0, 15, 0.5, 0)
+			Image.BorderSizePixel = 0
+			Image.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Image.ImageTransparency = 0.5
+			Image.Image = Options.Image
+			Image.Parent = TabButton
+
+			local Title = Instance.new("TextLabel")
+			Title.Name = "Title"
+			Title.ZIndex = 2
+			Title.AnchorPoint = Vector2.new(1, 0.5)
+			Title.Size = UDim2.new(1, -35, 0, 20)
+			Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+			Title.BackgroundTransparency = 1
+			Title.Position = UDim2.new(1, 0, 0.5, 0)
+			Title.BorderSizePixel = 0
+			Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Title.FontSize = Enum.FontSize.Size14
+			Title.TextSize = 13
+			Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Title.Text = Options.Title
+			Title.Font = Enum.Font.Gotham
+			Title.TextTransparency = 0.5
+			Title.TextXAlignment = Enum.TextXAlignment.Left
+			Title.Parent = TabButton
+
+			-- Tab > RightContainer
+			local Tab = Instance.new("Frame")
+			Tab.Name = "Tab_" .. Options.Title
+			Tab.Position = UDim2.new(0, 0, -1, 0)
+			Tab.Size = UDim2.new(1, 0, 1, 0)
+			Tab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+			Tab.BackgroundTransparency = 1
+			Tab.BorderSizePixel = 0
+			Tab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Tab.Parent = TabContainer
+
+			local Header = Instance.new("Frame")
+			Header.Name = "Header"
+			Header.Size = UDim2.new(1, 0, 0, 50)
+			Header.BorderColor3 = Color3.fromRGB(0, 0, 0)
+			Header.BackgroundTransparency = 1
+			Header.BorderSizePixel = 0
+			Header.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Header.Parent = Tab
+
+			local Searchbox = Instance.new("TextBox")
+			Searchbox.Name = "Searchbox"
+			Searchbox.AnchorPoint = Vector2.new(1, 0.5)
+			Searchbox.AutomaticSize = Enum.AutomaticSize.X
+			Searchbox.Size = UDim2.new(0, 0, 0, 25)
+			Searchbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+			Searchbox.Position = UDim2.new(1, -10, 0.5, 0)
+			Searchbox.BorderSizePixel = 0
+			Searchbox.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+			Searchbox.FontSize = Enum.FontSize.Size12
+			Searchbox.PlaceholderColor3 = Color3.fromRGB(127, 127, 127)
+			Searchbox.TextSize = 12
+			Searchbox.TextTransparency = 0.5
+			Searchbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Searchbox.PlaceholderText = "Search"
+			Searchbox.Text = ""
+			Searchbox.Font = Enum.Font.Gotham
+			Searchbox.Parent = Header
+
+			local UIPadding = Instance.new("UIPadding")
+			UIPadding.PaddingLeft = UDim.new(0, 5)
+			UIPadding.PaddingRight = UDim.new(0, 20)
+			UIPadding.Parent = Searchbox
+
+			local Icon = Instance.new("ImageLabel")
+			Icon.Name = "Icon"
+			Icon.AnchorPoint = Vector2.new(1, 0.5)
+			Icon.Size = UDim2.new(0, 12, 0, 12)
+			Icon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+			Icon.BackgroundTransparency = 1
+			Icon.Position = UDim2.new(1, 15, 0.5, 0)
+			Icon.BorderSizePixel = 0
+			Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Icon.Image = "rbxassetid://7072721559"
+			Icon.Parent = Searchbox
+
+			local UIStroke = Instance.new("UIStroke")
+			UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+			UIStroke.Thickness = 1
+			UIStroke.Color = Color3.fromRGB(45, 45, 45)
+			UIStroke.Parent = Searchbox
+
+			local TabSubtitle = Instance.new("TextLabel")
+			TabSubtitle.Name = "Subtitle"
+			TabSubtitle.AutomaticSize = Enum.AutomaticSize.Y
+			TabSubtitle.Size = UDim2.new(1, -15, 0, 0)
+			TabSubtitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+			TabSubtitle.BackgroundTransparency = 1
+			TabSubtitle.Position = UDim2.new(0, 15, 0, 32)
+			TabSubtitle.BorderSizePixel = 0
+			TabSubtitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			TabSubtitle.FontSize = Enum.FontSize.Size12
+			TabSubtitle.TextSize = 12
+			TabSubtitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+			TabSubtitle.Text = Options.Description
+			TabSubtitle.Font = Enum.Font.Gotham
+			TabSubtitle.TextTransparency = 0.5
+			TabSubtitle.TextXAlignment = Enum.TextXAlignment.Left
+			TabSubtitle.Parent = Header
+
+			local TabTitle = Instance.new("TextLabel")
+			TabTitle.Name = "Title"
+			TabTitle.AutomaticSize = Enum.AutomaticSize.Y
+			TabTitle.Size = UDim2.new(1, -15, 0, 0)
+			TabTitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+			TabTitle.BackgroundTransparency = 1
+			TabTitle.Position = UDim2.new(0, 15, 0, 15)
+			TabTitle.BorderSizePixel = 0
+			TabTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			TabTitle.FontSize = Enum.FontSize.Size18
+			TabTitle.TextSize = 15
+			TabTitle.TextColor3 = Theme.TextColor
+			TabTitle.Text = Options.Title
+			TabTitle.Font = Enum.Font.GothamBold
+			TabTitle.TextXAlignment = Enum.TextXAlignment.Left
+			TabTitle.Parent = Header
+
+			local In = Instance.new("ScrollingFrame")
+			In.Name = "In"
+			In.Size = UDim2.new(1, 0, 1, -50)
+			In.Selectable = false
+			In.BorderColor3 = Color3.fromRGB(0, 0, 0)
+			In.BackgroundTransparency = 1
+			In.Position = UDim2.new(0, 0, 0, 50)
+			In.BorderSizePixel = 0
+			In.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			In.AutomaticCanvasSize = Enum.AutomaticSize.Y
+			In.CanvasSize = UDim2.new(0, 0, 0, 0)
+			In.ScrollBarImageTransparency = 1
+			In.ScrollBarThickness = 0
+			In.Parent = Tab
+
+			local UIPadding1 = Instance.new("UIPadding")
+			UIPadding1.PaddingTop = UDim.new(0, 5)
+			UIPadding1.PaddingBottom = UDim.new(0, 5)
+			UIPadding1.PaddingLeft = UDim.new(0, 5)
+			UIPadding1.PaddingRight = UDim.new(0, 5)
+			UIPadding1.Parent = In
+
+			local Left = Instance.new("Frame")
+			Left.Name = "Left"
+			Left.AutomaticSize = Enum.AutomaticSize.Y
+			Left.Size = UDim2.new(0.5, -5, 0, 0)
+			Left.BorderColor3 = Color3.fromRGB(0, 0, 0)
+			Left.BackgroundTransparency = 1
+			Left.BorderSizePixel = 0
+			Left.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Left.Parent = In
+
+			local UIPadding2 = Instance.new("UIPadding")
+			UIPadding2.PaddingBottom = UDim.new(0, 5)
+			UIPadding2.PaddingLeft = UDim.new(0, 5)
+			UIPadding2.PaddingRight = UDim.new(0, 5)
+			UIPadding2.Parent = Left
+
+			local UIListLayout = Instance.new("UIListLayout")
+			UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+			UIListLayout.Padding = UDim.new(0, 8)
+			UIListLayout.Parent = Left
+
+			local Right = Instance.new("Frame")
+			Right.Name = "Right"
+			Right.AnchorPoint = Vector2.new(1, 0)
+			Right.AutomaticSize = Enum.AutomaticSize.Y
+			Right.Size = UDim2.new(0.5, -5, 0, 0)
+			Right.BorderColor3 = Color3.fromRGB(0, 0, 0)
+			Right.BackgroundTransparency = 1
+			Right.Position = UDim2.new(1, 0, 0, 0)
+			Right.BorderSizePixel = 0
+			Right.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Right.Parent = In
+
+			local UIPadding3 = Instance.new("UIPadding")
+			UIPadding3.PaddingBottom = UDim.new(0, 5)
+			UIPadding3.PaddingLeft = UDim.new(0, 5)
+			UIPadding3.PaddingRight = UDim.new(0, 5)
+			UIPadding3.Parent = Right
+
+			local UIListLayout1 = Instance.new("UIListLayout")
+			UIListLayout1.SortOrder = Enum.SortOrder.LayoutOrder
+			UIListLayout1.Padding = UDim.new(0, 8)
+			UIListLayout1.Parent = Right
+
+			-- Functions
+			
+			local Sections = {}
+			
+			local function GetSectionsVisible(Side)
+				local Count = 0
+				
+				for _, CurrentSection in pairs(Side:GetChildren()) do
+					if CurrentSection:IsA("Frame") and CurrentSection.Visible then
+						Count = Count + 1
+					end
+				end
+				
+				return Count
+			end
+			
+			local function GetSectionsIncluding(Text)
+				local Results = 0
+				
+				for _, CurrentSection in pairs(Sections) do
+					if _:sub(1, #Text) == Text:sub(1, #Text) then
+						CurrentSection[1].Visible = true
+					else
+						CurrentSection[1].Visible = false
+					end
+				end
+			end
+			
+			Searchbox.Focused:Connect(function()
+				Library:Tween(UIStroke, 0.25, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Color = Theme.ImageColor})
+			end)
+			
+			Searchbox.FocusLost:Connect(function()
+				Library:Tween(UIStroke, 0.175, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Color = Color3.fromRGB(45, 45, 45)})
+			end)
+			
+			Searchbox:GetPropertyChangedSignal("Text"):Connect(function()
+				GetSectionsIncluding(Searchbox.Text)
+			end)
+
+			Library:OnClick(TabButton, function()
+				if Library.LastTab ~= Tab then
+					WindowFunctions:CloseTabs(TabButton)
+					
+					Tab.Position = UDim2.new(-1, 0, 0, 0)
+					
+					Library:Tweens({
+						{Title, 0.25, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {TextTransparency = 0}},
+						{Image, 0.25, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {ImageTransparency = 0}},
+						{Tab, 0.5, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Position = UDim2.new(0, 0, 0, 0)}}
+					})
+					
+					Library.LastTab = Tab
+				end
+			end)
+			
+			local TabFunctions = {}
+			
+			function TabFunctions:Section(Options)
+				local Options = Options or {}
+				Options.Title = Options.Title or "Section"
+				Options.Side = Options.Side == 2 and Right or Left
+				
+				local Section = Instance.new("Frame")
+				Section.Name = "Section_" .. Options.Title
+				Section.AutomaticSize = Enum.AutomaticSize.None
+				Section.Size = UDim2.new(1, 0, 0, 30)
+				Section.ClipsDescendants = true
+				Section.BorderColor3 = Color3.fromRGB(0, 0, 0)
+				Section.BorderSizePixel = 0
+				Section.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+				Section.Parent = Options.Side
+				
+				local UIStroke = Instance.new("UIStroke")
+				UIStroke.Thickness = 1
+				UIStroke.Color = Color3.fromRGB(45, 45, 45)
+				UIStroke.Parent = Section
+
+				local Title = Instance.new("TextLabel")
+				Title.Name = "Title"
+				Title.AutomaticSize = Enum.AutomaticSize.Y
+				Title.Size = UDim2.new(1, -15, 0, 0)
+				Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+				Title.BackgroundTransparency = 1
+				Title.Position = UDim2.new(0, 0, 0, 10)
+				Title.BorderSizePixel = 0
+				Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				Title.FontSize = Enum.FontSize.Size12
+				Title.TextSize = 12
+				Title.TextColor3 = Theme.TextColor
+				Title.Text = Options.Title
+				Title.Font = Enum.Font.GothamBold
+				Title.TextXAlignment = Enum.TextXAlignment.Left
+				Title.Parent = Section
+
+				local Container = Instance.new("Frame")
+				Container.Name = "Container"
+				Container.AutomaticSize = Enum.AutomaticSize.Y
+				Container.Size = UDim2.new(1, 0, 0, 0)
+				Container.ClipsDescendants = false
+				Container.BorderColor3 = Color3.fromRGB(0, 0, 0)
+				Container.BackgroundTransparency = 1
+				Container.Position = UDim2.new(0, 0, 0, 30)
+				Container.BorderSizePixel = 0
+				Container.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				Container.Parent = Section
+
+				local UIListLayout = Instance.new("UIListLayout")
+				UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+				UIListLayout.Padding = UDim.new(0, 5)
+				UIListLayout.Parent = Container
+
+				local UIPadding = Instance.new("UIPadding")
+				UIPadding.PaddingBottom = UDim.new(0, 10)
+				UIPadding.PaddingLeft = UDim.new(0, 10)
+				UIPadding.PaddingRight = UDim.new(0, 10)
+				UIPadding.Parent = Section
+
+				local Dock = Instance.new("Frame")
+				Dock.Name = "Dock"
+				Dock.AnchorPoint = Vector2.new(1, 0)
+				Dock.Size = UDim2.new(0, 30, 0, 30)
+				Dock.BorderColor3 = Color3.fromRGB(0, 0, 0)
+				Dock.BackgroundTransparency = 1
+				Dock.Position = UDim2.new(1, 10, 0, 0)
+				Dock.BorderSizePixel = 0
+				Dock.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				Dock.Parent = Section
+
+				local Icon = Instance.new("ImageLabel")
+				Icon.Name = "Icon"
+				Icon.AnchorPoint = Vector2.new(0.5, 0.5)
+				Icon.Size = UDim2.new(1, -15, 1, -15)
+				Icon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+				Icon.BackgroundTransparency = 1
+				Icon.Position = UDim2.new(0.5, 0, 0.5, 0)
+				Icon.BorderSizePixel = 0
+				Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				Icon.Image = "rbxassetid://7072720870"
+				Icon.Parent = Dock
+				
+				Library:OnClick(Dock, function()
+					if Icon.Rotation == 0 then
+						Section.ClipsDescendants = false
+						Section.AutomaticSize = Enum.AutomaticSize.Y
+						Library:Tween(Icon, 0.25, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Rotation = 135, ImageColor3 = Theme.ImageColor})
+					elseif Icon.Rotation == 135 then
+						Section.ClipsDescendants = true
+						Section.AutomaticSize = Enum.AutomaticSize.None
+						Library:Tween(Icon, 0.25, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Rotation = 0, ImageColor3 = Color3.fromRGB(255, 255, 255)})
+					end
+				end)
+				
+				Sections[Options.Title] = {Section, Section.Parent}
+				
+				local SectionFunctions = {}
+				
+				function SectionFunctions:Label(Options)
+					local Options = Options or {}
+					Options.Text = Options.Text or "Label"
+					
+					local Label = Instance.new("TextLabel")
+					Label.Name = "Label_" .. Options.Text
+					Label.Size = UDim2.new(1, 0, 0, 15)
+					Label.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					Label.BackgroundTransparency = 1
+					Label.BorderSizePixel = 0
+					Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					Label.FontSize = Enum.FontSize.Size12
+					Label.TextSize = 12
+					Label.TextColor3 = Color3.fromRGB(255, 255, 255)
+					Label.Text = Options.Text
+					Label.Font = Enum.Font.Gotham
+					Label.TextTransparency = 0.5
+					Label.TextXAlignment = Enum.TextXAlignment.Left
+					Label.Parent = Container
+				end
+				
+				function SectionFunctions:Button(Options)
+					local Options = Options or {}
+					Options.Text = Options.Text or "Button"
+					Options.Callback = Options.Callback or function() end
+					
+					local Button = Instance.new("Frame")
+					Button.Name = "Button_" .. Options.Text
+					Button.ZIndex = 3
+					Button.Size = UDim2.new(1, 0, 0, 20)
+					Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					Button.BackgroundTransparency = 1
+					Button.BorderSizePixel = 0
+					Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					Button.ClipsDescendants = true
+					Button.Parent = Container
+
+					local Title = Instance.new("TextLabel")
+					Title.Name = "Title"
+					Title.AnchorPoint = Vector2.new(0, 0.5)
+					Title.Size = UDim2.new(0, 200, 0, 12)
+					Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					Title.BackgroundTransparency = 1
+					Title.Position = UDim2.new(0, 0, 0.5, 0)
+					Title.BorderSizePixel = 0
+					Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					Title.FontSize = Enum.FontSize.Size12
+					Title.TextSize = 12
+					Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+					Title.Text = "Button"
+					Title.Font = Enum.Font.Gotham
+					Title.TextTransparency = 0.5
+					Title.TextXAlignment = Enum.TextXAlignment.Left
+					Title.Parent = Button
+
+					local Icon = Instance.new("ImageLabel")
+					Icon.Name = "Icon"
+					Icon.AnchorPoint = Vector2.new(1, 0.5)
+					Icon.Size = UDim2.new(0, 15, 0, 15)
+					Icon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					Icon.BackgroundTransparency = 1
+					Icon.Position = UDim2.new(1, 0, 0.5, 0)
+					Icon.BorderSizePixel = 0
+					Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					Icon.Image = "rbxassetid://10723375250"
+					Icon.ImageColor3 = Theme.ImageColor
+					Icon.Parent = Button
+					
+					local Circle = Instance.new("Frame")
+					Circle.Name = "CircleEffectWave"
+					Circle.BackgroundColor3 = Theme.ImageColor
+					Circle.BorderSizePixel = 0
+					Circle.Size = UDim2.fromOffset(0, 0)
+					Circle.Visible = false
+					Circle.Parent = Button
+					
+					local CircleCorner = Instance.new("UICorner")
+					CircleCorner.CornerRadius = UDim.new(1, 0)
+					CircleCorner.Parent = Circle
+					
+					Library:OnClick(Button, function()
+						Options.Callback()
+						
+						if Circle.Visible == false then
+							Circle.Visible = true
+							Circle.Size = UDim2.new(0, 0, 0, 0)
+							Circle.Position = UDim2.new(0, 0, 0.5, 0)
+							Circle.BackgroundTransparency = .5
+							
+							Library:Tween(Circle, 0.5, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {BackgroundTransparency = 1, Size = UDim2.new(1, 0, 0, 500)})
+							wait(0.5)
+							Circle.Visible = false
+						end
+					end)
+				end
+				
+				function SectionFunctions:Checkbox(Options)
+					local Options = Options or {}
+					Options.Text = Options.Text or "Checkbox"
+					Options.Default = Options.Default or false
+					Options.Callback = Options.Callback or function() end
+					
+					local Checkbox = Instance.new("Frame")
+					Checkbox.Name = "Checkbox"
+					Checkbox.Size = UDim2.new(1, 0, 0, 20)
+					Checkbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					Checkbox.BackgroundTransparency = 1
+					Checkbox.BorderSizePixel = 0
+					Checkbox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					Checkbox.Parent = Container
+
+					local Title = Instance.new("TextLabel")
+					Title.Name = "Title"
+					Title.AnchorPoint = Vector2.new(0, 0.5)
+					Title.Size = UDim2.new(0, 200, 0, 12)
+					Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					Title.BackgroundTransparency = 1
+					Title.Position = UDim2.new(0, 0, 0.5, 0)
+					Title.BorderSizePixel = 0
+					Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					Title.FontSize = Enum.FontSize.Size12
+					Title.TextSize = 12
+					Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+					Title.Text = Options.Text
+					Title.Font = Enum.Font.Gotham
+					Title.TextTransparency = 0.5
+					Title.TextXAlignment = Enum.TextXAlignment.Left
+					Title.Parent = Checkbox
+
+					local Box = Instance.new("Frame")
+					Box.Name = "Box"
+					Box.AnchorPoint = Vector2.new(1, 0.5)
+					Box.Size = UDim2.new(0, 15, 0, 20)
+					Box.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					Box.BackgroundTransparency = 1
+					Box.Position = UDim2.new(1, 0, 0.5, 0)
+					Box.BorderSizePixel = 0
+					Box.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					Box.Parent = Checkbox
+
+					local Check = Instance.new("ImageLabel")
+					Check.Name = "Check"
+					Check.AnchorPoint = Vector2.new(0.5, 0.5)
+					Check.Size = UDim2.new(0, 15, 0, 15)
+					Check.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					Check.BackgroundTransparency = 1
+					Check.Position = UDim2.new(0.5, 0, 0.5, 0)
+					Check.BorderSizePixel = 0
+					Check.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					Check.ImageTransparency = Options.Default == false and 1 or 0
+					Check.Image = "rbxassetid://7072706576"
+					Check.ImageColor3 = Theme.ImageColor
+					Check.Parent = Box
+
+					local Uncheck = Instance.new("ImageLabel")
+					Uncheck.Name = "Uncheck"
+					Uncheck.AnchorPoint = Vector2.new(0.5, 0.5)
+					Uncheck.Size = UDim2.new(0, 15, 0, 15)
+					Uncheck.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					Uncheck.BackgroundTransparency = 1
+					Uncheck.Position = UDim2.new(0.5, 0, 0.5, 0)
+					Uncheck.BorderSizePixel = 0
+					Uncheck.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					Uncheck.Image = "rbxassetid://7072722963"
+					Uncheck.ImageTransparency = Options.Default == true and 1 or 0
+					Uncheck.Parent = Box
+					
+					Library:OnClick(Checkbox, function()
+						Options.Callback(Check.ImageTransparency == 1 and true or false)
+						
+						if Check.ImageTransparency == 1 then
+							Library:Tweens({
+								{Check, 0.175, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {ImageTransparency = 0}},
+								{Uncheck, 0.175, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {ImageTransparency = 1}}
+							})
+						elseif Check.ImageTransparency == 0 then
+							Library:Tweens({
+								{Check, 0.175, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {ImageTransparency = 1}},
+								{Uncheck, 0.175, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {ImageTransparency = 0}}
+							})
+						end
+					end)
+					
+					local CheckboxFunctions = {}
+					
+					function CheckboxFunctions:SetValue(Value)
+						local BooleanValue = Value
+						local Value = Value == true and 0 or 1
+						
+						Check.ImageTransparency = Value
+						Uncheck.ImageTransparency = not Check.ImageTransparency
+						
+						Options.Callback(BooleanValue)
+					end
+					
+					return CheckboxFunctions
+				end
+				
+				function SectionFunctions:Slider(Options)
+					local Options = Options or {}
+					Options.Text = Options.Text or "Slider"
+					Options.Default = Options.Default or 0
+					Options.Minimum = Options.Minimum or -100
+					Options.Maximum = Options.Maximum or 100
+					Options.Callback = Options.Callback or function() end
+					
+					local Slider = Instance.new("Frame")
+					Slider.Name = "Slider"
+					Slider.Size = UDim2.new(1, 0, 0, 20)
+					Slider.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					Slider.BackgroundTransparency = 1
+					Slider.BorderSizePixel = 0
+					Slider.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					Slider.Parent = Container
+
+					local Title = Instance.new("TextLabel")
+					Title.Name = "Title"
+					Title.AnchorPoint = Vector2.new(0, 0.5)
+					Title.Size = UDim2.new(1, 0, 0, 12)
+					Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					Title.BackgroundTransparency = 1
+					Title.Position = UDim2.new(0, 0, 0.5, 0)
+					Title.BorderSizePixel = 0
+					Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					Title.FontSize = Enum.FontSize.Size12
+					Title.TextSize = 12
+					Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+					Title.Text = Options.Text
+					Title.Font = Enum.Font.Gotham
+					Title.TextTransparency = 0.5
+					Title.TextXAlignment = Enum.TextXAlignment.Left
+					Title.Parent = Slider
+
+					local InnerBar = Instance.new("Frame")
+					InnerBar.Name = "InnerBar"
+					InnerBar.AnchorPoint = Vector2.new(1, 0.5)
+					InnerBar.Size = UDim2.new(0.4, 0, 0, 5)
+					InnerBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					InnerBar.Position = UDim2.new(1, -45, 0.5, 0)
+					InnerBar.BorderSizePixel = 0
+					InnerBar.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+					InnerBar.Parent = Slider
+
+					local Outer = Instance.new("Frame")
+					Outer.Name = "Outer"
+					Outer.Size = UDim2.new(((Options.Default or Options.Minimum) - Options.Minimum) / (Options.Maximum - Options.Minimum), 0, 1, 0)
+					Outer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					Outer.BorderSizePixel = 0
+					Outer.BackgroundColor3 = Theme.ImageColor
+					Outer.Parent = InnerBar
+
+					local Circle = Instance.new("Frame")
+					Circle.Name = "Circle"
+					Circle.AnchorPoint = Vector2.new(0.5, 0.5)
+					Circle.Size = UDim2.new(0, 10, 0, 10)
+					Circle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					Circle.Position = UDim2.new(1, 0, 0.5, 0)
+					Circle.BorderSizePixel = 0
+					Circle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					Circle.Parent = Outer
+
+					local UICorner = Instance.new("UICorner")
+					UICorner.CornerRadius = UDim.new(1, 0)
+					UICorner.Parent = Circle
+
+					local UICorner1 = Instance.new("UICorner")
+					UICorner1.CornerRadius = UDim.new(1, 0)
+					UICorner1.Parent = Outer
+
+					local UICorner2 = Instance.new("UICorner")
+					UICorner2.CornerRadius = UDim.new(1, 0)
+					UICorner2.Parent = InnerBar
+
+					local Inputfield = Instance.new("TextBox")
+					Inputfield.Name = "Inputfield"
+					Inputfield.AnchorPoint = Vector2.new(1, 0.5)
+					Inputfield.Size = UDim2.new(0, 30, 1, -5)
+					Inputfield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					Inputfield.Position = UDim2.new(1, -1, 0.5, 0)
+					Inputfield.BorderSizePixel = 0
+					Inputfield.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+					Inputfield.FontSize = Enum.FontSize.Size11
+					Inputfield.TextWrapped = true
+					Inputfield.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+					Inputfield.TextWrap = true
+					Inputfield.TextSize = 11
+					Inputfield.TextTruncate = Enum.TextTruncate.AtEnd
+					Inputfield.TextTransparency = 0.5
+					Inputfield.TextColor3 = Color3.fromRGB(255, 255, 255)
+					Inputfield.PlaceholderText = "..."
+					Inputfield.Text = Options.Default
+					Inputfield.Font = Enum.Font.Gotham
+					Inputfield.Parent = Slider
+
+					local UIStroke = Instance.new("UIStroke")
+					UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+					UIStroke.Color = Color3.fromRGB(45, 45, 45)
+					UIStroke.Parent = Inputfield
+					
+					local IsSliding = false
+					
+					local function Slide()
+						local XValue = (Library.Mouse.X - Outer.AbsolutePosition.X) / InnerBar.AbsoluteSize.X
+						XValue = math.clamp(XValue, 0, 1)
+
+						Library:Tween(Outer, 0.1, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Size = UDim2.new(XValue, 0, 1, 0)})
+
+						local InputText = ((XValue * Options.Maximum) / Options.Maximum) * (Options.Maximum - Options.Minimum) + Options.Minimum
+
+						Inputfield.Text = math.floor(InputText)
+						
+						Options.Callback(tonumber(Inputfield.Text))
+					end
+					
+					Options.Callback(Options.Default)
+					
+					Inputfield.FocusLost:Connect(function()
+						if tonumber(Inputfield.Text) then
+							local XValue = (
+								(tonumber(Inputfield.Text) or Options.Minimum) - Options.Minimum
+							) / (Options.Maximum - Options.Minimum)
+							
+							Outer.Size = UDim2.new(
+								math.clamp(XValue, 0, 1), 
+								0, 
+								1, 
+								0
+							)
+							
+							Inputfield.Text = math.clamp(tonumber(Inputfield.Text), Options.Minimum, Options.Maximum)
+						else
+							local XValue = (
+								(tonumber(Options.Default) or Options.Minimum) - Options.Minimum
+							) / (Options.Maximum - Options.Minimum)
+
+							Outer.Size = UDim2.new(
+								math.clamp(XValue, 0, 1), 
+								0, 
+								1, 
+								0
+							)
+							
+							Inputfield.Text = Options.Default
+						end
+						
+						Options.Callback(tonumber(Inputfield.Text))
+					end)
+					
+					InnerBar.InputBegan:Connect(function(Input)
+						if Input.UserInputType == Enum.UserInputType.MouseButton1 then
+							IsSliding = true
+							Slide()
+						end
+					end)
+					
+					InnerBar.InputEnded:Connect(function(Input)
+						if Input.UserInputType == Enum.UserInputType.MouseButton1 then
+							IsSliding = false
+						end
+					end)
+					
+					Library.Mouse.Move:Connect(function()
+						if IsSliding then
+							Slide()
+						end
+					end)
+					
+					local SliderFunctions = {}
+					
+					function SliderFunctions:SetValue(Value)
+						Inputfield:CaptureFocus()
+						Inputfield.Text = Value
+						Inputfield:ReleaseFocus()
+					end
+					
+					return SliderFunctions
+				end
+				
+				function SectionFunctions:Dropdown(Options)
+					local Options = Options or {}
+					Options.Text = Options.Text or "Dropdown"
+					Options.List = Options.List or {}
+					Options.Default = Options.Default or 1
+					Options.Callback = Options.Callback or function() end
+					
+					local Dropdown = Instance.new("Frame")
+					Dropdown.Name = "Dropdown"
+					Dropdown.Size = UDim2.new(1, 0, 0, 20)
+					Dropdown.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					Dropdown.BackgroundTransparency = 1
+					Dropdown.BorderSizePixel = 0
+					Dropdown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					Dropdown.Parent = Container
+
+					local Title = Instance.new("TextLabel")
+					Title.Name = "Title"
+					Title.AnchorPoint = Vector2.new(0, 0.5)
+					Title.Size = UDim2.new(0, 200, 0, 12)
+					Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					Title.BackgroundTransparency = 1
+					Title.Position = UDim2.new(0, 0, 0.5, 0)
+					Title.BorderSizePixel = 0
+					Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					Title.FontSize = Enum.FontSize.Size12
+					Title.TextSize = 12
+					Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+					Title.Text = Options.Text
+					Title.Font = Enum.Font.Gotham
+					Title.TextTransparency = 0.5
+					Title.TextXAlignment = Enum.TextXAlignment.Left
+					Title.Parent = Dropdown
+
+					local Box = Instance.new("Frame")
+					Box.Name = "Box"
+					Box.AnchorPoint = Vector2.new(1, 0.5)
+					Box.Size = UDim2.new(0, 15, 0, 20)
+					Box.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					Box.BackgroundTransparency = 1
+					Box.Position = UDim2.new(1, 0, 0.5, 0)
+					Box.BorderSizePixel = 0
+					Box.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					Box.Parent = Dropdown
+
+					local Icon = Instance.new("ImageLabel")
+					Icon.Name = "Icon"
+					Icon.ZIndex = 2
+					Icon.AnchorPoint = Vector2.new(0.5, 0.5)
+					Icon.Size = UDim2.new(0, 20, 0, 20)
+					Icon.BackgroundTransparency = 1
+					Icon.Position = UDim2.new(0.5, 0, 0.5, 0)
+					Icon.ImageRectOffset = Vector2.new(324, 524)
+					Icon.ImageRectSize = Vector2.new(36, 36)
+					Icon.Image = "rbxassetid://3926307971"
+					Icon.Parent = Box
+
+					local Contents = Instance.new("Frame")
+					Contents.Name = "Contents"
+					Contents.AnchorPoint = Vector2.new(1, 0)
+					Contents.Size = UDim2.new(0.5, 0, 0, 0)
+					Contents.ClipsDescendants = true
+					Contents.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					Contents.Position = UDim2.new(1, 0, 1, 0)
+					Contents.BorderSizePixel = 0
+					Contents.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+					Contents.ZIndex = 1000
+					Contents.Parent = Dropdown
+
+					local UIStroke = Instance.new("UIStroke")
+					UIStroke.Transparency = 1
+					UIStroke.Thickness = 1
+					UIStroke.Color = Color3.fromRGB(45, 45, 45)
+					UIStroke.Parent = Contents
+					
+					local UIPadding = Instance.new("UIPadding")
+					UIPadding.PaddingLeft = UDim.new(0, 5)
+					UIPadding.Parent = Contents
+
+					local UIListLayout = Instance.new("UIListLayout")
+					UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+					UIListLayout.Parent = Contents
+					
+					if Options.List[Options.Default] then
+						Options.Callback(Options.List[Options.Default])
+
+						UIStroke.Transparency = 1
+						Contents.AutomaticSize = Enum.AutomaticSize.None
+
+						Library:Tween(Icon, 0.175, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Rotation = 0})
+						
+						Title.Text = Options.Text .. " - " .. Options.List[Options.Default]
+					end
+					
+					local ListItem = {}
+					
+					for _, Index in pairs(Options.List) do
+						local Untitled = Instance.new("TextLabel")
+						Untitled.Name = Index
+						Untitled.Size = UDim2.new(1, 0, 0, 25)
+						Untitled.BorderColor3 = Color3.fromRGB(0, 0, 0)
+						Untitled.BackgroundTransparency = 1
+						Untitled.BorderSizePixel = 0
+						Untitled.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						Untitled.FontSize = Enum.FontSize.Size12
+						Untitled.TextSize = 12
+						Untitled.TextColor3 = Color3.fromRGB(255, 255, 255)
+						Untitled.Font = Enum.Font.Gotham
+						Untitled.Text = Index
+						Untitled.TextTransparency = 0.5
+						Untitled.TextXAlignment = Enum.TextXAlignment.Left
+						Untitled.ZIndex = 1000
+						Untitled.Parent = Contents
+						
+						table.insert(ListItem, Untitled)
+						
+						Library:OnClick(Untitled, function()
+							Options.Callback(Index)
+							
+							UIStroke.Transparency = 1
+							Contents.AutomaticSize = Enum.AutomaticSize.None
+
+							Library:Tween(Icon, 0.175, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Rotation = 0})
+							
+							Title.Text = Options.Text .. " - " .. Index
+						end)
+					end
+					
+					Library:OnClick(Box, function()
+						if Icon.Rotation == 0 then
+							UIStroke.Transparency = 0
+							Contents.AutomaticSize = Enum.AutomaticSize.Y
+							
+							Library:Tween(Icon, 0.175, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Rotation = 180})
+						elseif Icon.Rotation == 180 then
+							UIStroke.Transparency = 1
+							Contents.AutomaticSize = Enum.AutomaticSize.None
+							
+							Library:Tween(Icon, 0.175, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Rotation = 0})
+						end
+					end)
+					
+					local DropdownFunctions = {}
+						
+					function DropdownFunctions:Refresh(List)
+						for _, Item in pairs(ListItem) do
+							Item:Destroy()
+						end
+						
+						for _, Index in pairs(List) do
+							local Untitled = Instance.new("TextLabel")
+							Untitled.Name = Index
+							Untitled.Size = UDim2.new(1, 0, 0, 25)
+							Untitled.BorderColor3 = Color3.fromRGB(0, 0, 0)
+							Untitled.BackgroundTransparency = 1
+							Untitled.BorderSizePixel = 0
+							Untitled.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+							Untitled.FontSize = Enum.FontSize.Size12
+							Untitled.TextSize = 12
+							Untitled.TextColor3 = Color3.fromRGB(255, 255, 255)
+							Untitled.Font = Enum.Font.Gotham
+							Untitled.Text = Index
+							Untitled.TextTransparency = 0.5
+							Untitled.TextXAlignment = Enum.TextXAlignment.Left
+							Untitled.ZIndex = 1000
+							Untitled.Parent = Contents
+
+							table.insert(ListItem, Untitled)
+
+							Library:OnClick(Untitled, function()
+								Options.Callback(Index)
+
+								UIStroke.Transparency = 1
+								Contents.AutomaticSize = Enum.AutomaticSize.None
+
+								Library:Tween(Icon, 0.175, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Rotation = 0})
+
+								Title.Text = Options.Text .. " - " .. Index
+							end)
+						end
+						
+						Title.Text = Options.Text
+					end
+					
+					return DropdownFunctions
+				end
+				
+				function SectionFunctions:InputField(Options)
+					local Options = Options or {}
+					Options.Text = Options.Text or "InputField"
+					Options.Default = Options.Default or ""
+					Options.Callback = Options.Callback or function() end
+					
+					local InputField = Instance.new("Frame")
+					InputField.Name = "InputField"
+					InputField.Size = UDim2.new(1, 0, 0, 20)
+					InputField.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					InputField.BackgroundTransparency = 1
+					InputField.BorderSizePixel = 0
+					InputField.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					InputField.Parent = Container
+
+					local Title = Instance.new("TextLabel")
+					Title.Name = "Title"
+					Title.AnchorPoint = Vector2.new(0, 0.5)
+					Title.Size = UDim2.new(1, 0, 0, 12)
+					Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					Title.BackgroundTransparency = 1
+					Title.Position = UDim2.new(0, 0, 0.5, 0)
+					Title.BorderSizePixel = 0
+					Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					Title.FontSize = Enum.FontSize.Size12
+					Title.TextSize = 12
+					Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+					Title.Text = Options.Text
+					Title.Font = Enum.Font.Gotham
+					Title.TextTransparency = 0.5
+					Title.TextXAlignment = Enum.TextXAlignment.Left
+					Title.Parent = InputField
+
+					local Box = Instance.new("TextBox")
+					Box.Name = "Box"
+					Box.AnchorPoint = Vector2.new(1, 0.5)
+					Box.AutomaticSize = Enum.AutomaticSize.X
+					Box.Size = UDim2.new(0, 30, 1, -5)
+					Box.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					Box.Position = UDim2.new(1, -1, 0.5, 0)
+					Box.BorderSizePixel = 0
+					Box.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+					Box.FontSize = Enum.FontSize.Size11
+					Box.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+					Box.TextSize = 11
+					Box.TextTransparency = 0.5
+					Box.TextColor3 = Color3.fromRGB(255, 255, 255)
+					Box.PlaceholderText = "..."
+					Box.Text = Options.Default
+					Box.Font = Enum.Font.Gotham
+					Box.Parent = InputField
+
+					local UIStroke = Instance.new("UIStroke")
+					UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+					UIStroke.Color = Color3.fromRGB(45, 45, 45)
+					UIStroke.Parent = Box
+
+					local UIPadding = Instance.new("UIPadding")
+					UIPadding.PaddingLeft = UDim.new(0, 3)
+					UIPadding.PaddingRight = UDim.new(0, 3)
+					UIPadding.Parent = Box
+					
+					Box.Focused:Connect(function()
+						Library:Tween(UIStroke, 0.25, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Color = Theme.ImageColor})
+					end)
+					
+					Box.FocusLost:Connect(function()
+						Library:Tween(UIStroke, 0.175, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Color = Color3.fromRGB(45, 45, 45)})
+						Options.Callback(Box.Text)
+					end)
+				end
+				
+				return SectionFunctions
+			end
+			
+			return TabFunctions
+		end
+
+		return WindowFunctions
+	end
+	
+	return LoadFunctions
+end
+
+return Library
