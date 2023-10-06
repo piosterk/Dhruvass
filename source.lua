@@ -125,7 +125,7 @@ function Library:Load(Options)
 		ImageLabel.BorderSizePixel = 0
 		ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 60, 60)
 		ImageLabel.ScaleType = Enum.ScaleType.Fit
-		ImageLabel.ImageColor3 = Color3.fromRGB(255, 60, 60)
+		ImageLabel.ImageColor3 = Theme.ImageColor
 		ImageLabel.Image = "rbxassetid://13296472401"
 		ImageLabel.Parent = Frame
 
@@ -139,7 +139,7 @@ function Library:Load(Options)
 		ImageLabel1.BorderSizePixel = 0
 		ImageLabel1.BackgroundColor3 = Color3.fromRGB(255, 60, 60)
 		ImageLabel1.ScaleType = Enum.ScaleType.Fit
-		ImageLabel1.ImageColor3 = Color3.fromRGB(255, 60, 60)
+		ImageLabel1.ImageColor3 = Theme.ImageColor
 		ImageLabel1.Image = "rbxassetid://13296472401"
 		ImageLabel1.Parent = Frame
 
@@ -184,7 +184,7 @@ function Library:Load(Options)
 		ImageLabel2.BackgroundColor3 = Color3.fromRGB(255, 60, 60)
 		ImageLabel2.ScaleType = Enum.ScaleType.Fit
 		ImageLabel2.ImageTransparency = 0.5
-		ImageLabel2.ImageColor3 = Color3.fromRGB(255, 60, 60)
+		ImageLabel2.ImageColor3 = Theme.ImageColor
 		ImageLabel2.Image = "rbxassetid://13296472401"
 		ImageLabel2.Parent = Frame1
 
@@ -199,7 +199,7 @@ function Library:Load(Options)
 		ImageLabel3.BackgroundColor3 = Color3.fromRGB(255, 60, 60)
 		ImageLabel3.ScaleType = Enum.ScaleType.Fit
 		ImageLabel3.ImageTransparency = 0.5
-		ImageLabel3.ImageColor3 = Color3.fromRGB(255, 60, 60)
+		ImageLabel3.ImageColor3 = Theme.ImageColor
 		ImageLabel3.Image = "rbxassetid://13296472401"
 		ImageLabel3.Parent = Frame1
 
@@ -341,7 +341,7 @@ function Library:Load(Options)
 		EnterKey.Position = UDim2.new(0.5, -45, 0.5, 45)
 		EnterKey.Active = true
 		EnterKey.BorderSizePixel = 0
-		EnterKey.BackgroundColor3 = Color3.fromRGB(255, 60, 60)
+		EnterKey.BackgroundColor3 = Theme.TextColor
 		EnterKey.Parent = Left
 
 		local Title1 = Instance.new("TextLabel")
@@ -375,7 +375,7 @@ function Library:Load(Options)
 		GetKey.Position = UDim2.new(0.5, 45, 0.5, 45)
 		GetKey.Active = true
 		GetKey.BorderSizePixel = 0
-		GetKey.BackgroundColor3 = Color3.fromRGB(255, 60, 60)
+		GetKey.BackgroundColor3 = Theme.TextColor
 		GetKey.Parent = Left
 
 		local Title2 = Instance.new("TextLabel")
