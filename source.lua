@@ -215,7 +215,7 @@ function Library:Load(Options)
 		Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		Title.FontSize = Enum.FontSize.Size18
 		Title.TextSize = 15
-		Title.TextColor3 = Color3.fromRGB(255, 60, 60)
+		Title.TextColor3 = Theme.TextColor
 		Title.Text = "⛔🔑 Key System ✋🔐"
 		Title.Font = Enum.Font.GothamBold
 		Title.Parent = Right
@@ -1640,7 +1640,7 @@ function Library:Load(Options)
 					Box.BorderColor3 = Color3.fromRGB(0, 0, 0)
 					Box.Position = UDim2.new(1, -1, 0.5, 0)
 					Box.BorderSizePixel = 0
-					Box.BackgroundColor3 = Theme.SecondayColor
+					Box.BackgroundColor3 = Theme.SecondaryColor
 					Box.FontSize = Enum.FontSize.Size11
 					Box.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
 					Box.TextSize = 11
