@@ -5,6 +5,7 @@ local Theme = shared.__colortheme or {
 	ImageColor = Color3.fromRGB(255, 60, 60),
 	MainColor = Color3.fromRGB(20, 20, 20),
 	BackgroundColor = Color3.fromRGB(24, 24, 24),
+	SecondaryColor = Color3.fromRGB(30, 30, 30),
 	AccentColor = Color3.fromRGB(40, 40, 40),
 	StatsColor = Color3.fromRGB(28, 28, 28),
 	OutlineColor = Color3.fromRGB(40, 40, 40)
@@ -1313,7 +1314,7 @@ function Library:Load(Options)
 					Inputfield.BorderColor3 = Color3.fromRGB(0, 0, 0)
 					Inputfield.Position = UDim2.new(1, -1, 0.5, 0)
 					Inputfield.BorderSizePixel = 0
-					Inputfield.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+					Inputfield.BackgroundColor3 = Theme.SecondayColor
 					Inputfield.FontSize = Enum.FontSize.Size11
 					Inputfield.TextWrapped = true
 					Inputfield.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
@@ -1639,7 +1640,7 @@ function Library:Load(Options)
 					Box.BorderColor3 = Color3.fromRGB(0, 0, 0)
 					Box.Position = UDim2.new(1, -1, 0.5, 0)
 					Box.BorderSizePixel = 0
-					Box.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+					Box.BackgroundColor3 = Theme.SecondayColor
 					Box.FontSize = Enum.FontSize.Size11
 					Box.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
 					Box.TextSize = 11
