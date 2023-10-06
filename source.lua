@@ -544,7 +544,7 @@ function Library:Load(Options)
 		Local.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		Local.Position = UDim2.new(0.5, 0, 1, 0)
 		Local.BorderSizePixel = 0
-		Local.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+		Local.BackgroundColor3 = Theme.StatsColor
 		Local.Parent = TabButtonContainer
 
 		local User = Instance.new("TextLabel")
