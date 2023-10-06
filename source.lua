@@ -431,6 +431,7 @@ function Library:Load(Options)
 		local Options = Options or {}
 		Options.Title = Options.Title or "Untitled"
 		Options.Description = Options.Description or "No description."
+		Options.Size = Options.Size or UDim2.new(0, 650, 0, 500)
 
 		Options.User = Options.User or {
 			Username = game.Players.LocalPlayer.Name,
@@ -441,7 +442,7 @@ function Library:Load(Options)
 		Main.Name = "Main"
 		Main.Active = true
 		Main.AnchorPoint = Vector2.new(0, 0.5)
-		Main.Size = UDim2.new(0, 650, 0, 500)
+		Main.Size = Options.Size
 		Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		Main.Position = UDim2.new(1, 40, 0.5, 0)
 		Main.BorderSizePixel = 0
