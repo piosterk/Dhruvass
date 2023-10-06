@@ -1322,7 +1322,7 @@ function Library:Load(Options)
 					Inputfield.BorderColor3 = Color3.fromRGB(0, 0, 0)
 					Inputfield.Position = UDim2.new(1, -1, 0.5, 0)
 					Inputfield.BorderSizePixel = 0
-					Inputfield.BackgroundColor3 = Theme.SecondayColor
+					Inputfield.BackgroundColor3 = Theme.SecondaryColor
 					Inputfield.FontSize = Enum.FontSize.Size11
 					Inputfield.TextWrapped = true
 					Inputfield.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
