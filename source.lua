@@ -2,7 +2,12 @@ local Library = {}
 
 local Theme = shared.__colortheme or {
 	TextColor = Color3.fromRGB(255, 60, 60),
-	ImageColor = Color3.fromRGB(255, 60, 60)
+	ImageColor = Color3.fromRGB(255, 60, 60),
+	MainColor = Color3.fromRGB(20, 20, 20),
+	BackgroundColor = Color3.fromRGB(24, 24, 24),
+	AccentColor = Color3.fromRGB(40, 40, 40),
+	StatsColor = Color3.fromRGB(28, 28, 28),
+	OutlineColor = Color3.fromRGB(40, 40, 40)
 }
 
 local TweenService = game:GetService("TweenService")
@@ -84,7 +89,7 @@ function Library:Load(Options)
 		KeySystem.Position = UDim2.new(0.5, 0, 1, 40)
 		KeySystem.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		KeySystem.BorderSizePixel = 0
-		KeySystem.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+		KeySystem.BackgroundColor3 = Theme.MainColor
 		KeySystem.Parent = NamelessWindow
 
 		local Right = Instance.new("Frame")
@@ -95,7 +100,7 @@ function Library:Load(Options)
 		Right.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		Right.Position = UDim2.new(1, 0, 0, 0)
 		Right.BorderSizePixel = 0
-		Right.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		Right.BackgroundColor3 = Theme.BackgroundColor
 		Right.Parent = KeySystem
 
 		local Frame = Instance.new("Frame")
@@ -295,7 +300,7 @@ function Library:Load(Options)
 
 		local UIStroke = Instance.new("UIStroke")
 		UIStroke.Thickness = 2
-		UIStroke.Color = Color3.fromRGB(255, 60, 60)
+		UIStroke.Color = Theme.ImageColor
 		UIStroke.Parent = User
 
 		local UICorner = Instance.new("UICorner")
@@ -323,7 +328,7 @@ function Library:Load(Options)
 
 		local UIStroke1 = Instance.new("UIStroke")
 		UIStroke1.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-		UIStroke1.Color = Color3.fromRGB(40, 40, 40)
+		UIStroke1.Color = Theme.OutlineColor
 		UIStroke1.Parent = Keyinput
 
 		local EnterKey = Instance.new("Frame")
@@ -446,7 +451,7 @@ function Library:Load(Options)
 		Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		Main.Position = UDim2.new(1, 40, 0.5, 0)
 		Main.BorderSizePixel = 0
-		Main.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+		Main.BackgroundColor3 = Theme.MainColor
 		Main.Parent = NamelessWindow
 		
 		Library:Tween(Main, 0.8, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Position = UDim2.new(0.5, 0, 0.5, 0), AnchorPoint = Vector2.new(0.5, 0.5)})
@@ -464,7 +469,7 @@ function Library:Load(Options)
 		Left.Size = UDim2.new(0, 200, 1, 0)
 		Left.BorderColor3 = Color3.fromRGB(0, 0, 0)
 		Left.BorderSizePixel = 0
-		Left.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+		Left.BackgroundColor3 = Theme.BackgroundColor
 		Left.Parent = Main
 		
 		Left.InputBegan:Connect(function(Input)
@@ -736,7 +741,7 @@ function Library:Load(Options)
 			Searchbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
 			Searchbox.Position = UDim2.new(1, -10, 0.5, 0)
 			Searchbox.BorderSizePixel = 0
-			Searchbox.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+			Searchbox.BackgroundColor3 = Theme.BackgroundColor
 			Searchbox.FontSize = Enum.FontSize.Size12
 			Searchbox.PlaceholderColor3 = Color3.fromRGB(127, 127, 127)
 			Searchbox.TextSize = 12
@@ -767,7 +772,7 @@ function Library:Load(Options)
 			local UIStroke = Instance.new("UIStroke")
 			UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 			UIStroke.Thickness = 1
-			UIStroke.Color = Color3.fromRGB(45, 45, 45)
+			UIStroke.Color = Theme.OutlineColor
 			UIStroke.Parent = Searchbox
 
 			local TabSubtitle = Instance.new("TextLabel")
@@ -904,7 +909,7 @@ function Library:Load(Options)
 			end)
 			
 			Searchbox.FocusLost:Connect(function()
-				Library:Tween(UIStroke, 0.175, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Color = Color3.fromRGB(45, 45, 45)})
+				Library:Tween(UIStroke, 0.175, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Color = Theme.OutlineColor})
 			end)
 			
 			Searchbox:GetPropertyChangedSignal("Text"):Connect(function()
@@ -941,12 +946,12 @@ function Library:Load(Options)
 				Section.ClipsDescendants = true
 				Section.BorderColor3 = Color3.fromRGB(0, 0, 0)
 				Section.BorderSizePixel = 0
-				Section.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+				Section.BackgroundColor3 = Theme.BackgroundColor
 				Section.Parent = Options.Side
 				
 				local UIStroke = Instance.new("UIStroke")
 				UIStroke.Thickness = 1
-				UIStroke.Color = Color3.fromRGB(45, 45, 45)
+				UIStroke.Color = Theme.OutlineColor
 				UIStroke.Parent = Section
 
 				local Title = Instance.new("TextLabel")
@@ -1268,7 +1273,7 @@ function Library:Load(Options)
 					InnerBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
 					InnerBar.Position = UDim2.new(1, -45, 0.5, 0)
 					InnerBar.BorderSizePixel = 0
-					InnerBar.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+					InnerBar.BackgroundColor3 = Theme.AccentColor
 					InnerBar.Parent = Slider
 
 					local Outer = Instance.new("Frame")
@@ -1324,7 +1329,7 @@ function Library:Load(Options)
 
 					local UIStroke = Instance.new("UIStroke")
 					UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-					UIStroke.Color = Color3.fromRGB(45, 45, 45)
+					UIStroke.Color = Theme.OutlineColor
 					UIStroke.Parent = Inputfield
 					
 					local IsSliding = false
@@ -1471,14 +1476,14 @@ function Library:Load(Options)
 					Contents.BorderColor3 = Color3.fromRGB(0, 0, 0)
 					Contents.Position = UDim2.new(1, 0, 1, 0)
 					Contents.BorderSizePixel = 0
-					Contents.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+					Contents.BackgroundColor3 = Theme.BackgroundColor
 					Contents.ZIndex = 1000
 					Contents.Parent = Dropdown
 
 					local UIStroke = Instance.new("UIStroke")
 					UIStroke.Transparency = 1
 					UIStroke.Thickness = 1
-					UIStroke.Color = Color3.fromRGB(45, 45, 45)
+					UIStroke.Color = Theme.OutlineColor
 					UIStroke.Parent = Contents
 					
 					local UIPadding = Instance.new("UIPadding")
@@ -1647,7 +1652,7 @@ function Library:Load(Options)
 
 					local UIStroke = Instance.new("UIStroke")
 					UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-					UIStroke.Color = Color3.fromRGB(45, 45, 45)
+					UIStroke.Color = Theme.OutlineColor
 					UIStroke.Parent = Box
 
 					local UIPadding = Instance.new("UIPadding")
@@ -1660,7 +1665,7 @@ function Library:Load(Options)
 					end)
 					
 					Box.FocusLost:Connect(function()
-						Library:Tween(UIStroke, 0.175, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Color = Color3.fromRGB(45, 45, 45)})
+						Library:Tween(UIStroke, 0.175, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Color = Theme.OutlineColor})
 						Options.Callback(Box.Text)
 					end)
 				end
