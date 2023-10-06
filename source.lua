@@ -420,8 +420,10 @@ function Library:Load(Options)
 			end
 		end)
 	end
-	
-	repeat task.wait() until IsCorrectKey
+
+	if Options.KeySystem.IsRequired then
+		repeat task.wait() until IsCorrectKey
+	end
 
 	local LoadFunctions = {}
 	
