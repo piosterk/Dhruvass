@@ -112,7 +112,7 @@ function Library:Load(Options)
 		Frame.BorderColor3 = Color3.fromRGB(27, 42, 53)
 		Frame.Position = UDim2.new(0, 0, 1, 0)
 		Frame.BorderSizePixel = 0
-		Frame.BackgroundColor3 = Color3.fromRGB(255, 60, 60)
+		Frame.BackgroundColor3 = Theme.ImageColor
 		Frame.Parent = Right
 
 		local ImageLabel = Instance.new("ImageLabel")
@@ -154,7 +154,7 @@ function Library:Load(Options)
 		Frame1.BackgroundTransparency = 0.5
 		Frame1.Position = UDim2.new(0, 0, 1, -10)
 		Frame1.BorderSizePixel = 0
-		Frame1.BackgroundColor3 = Color3.fromRGB(255, 60, 60)
+		Frame1.BackgroundColor3 = Theme.ImageColor
 		Frame1.Parent = Right
 		
 		spawn(function()
@@ -331,6 +331,14 @@ function Library:Load(Options)
 		UIStroke1.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 		UIStroke1.Color = Theme.OutlineColor
 		UIStroke1.Parent = Keyinput
+
+		Keyinput.Focused:Connect(function()
+			Library:Tween(UIStroke1, 0.25, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Color = Theme.ImageColor})
+		end)
+		
+		Keyinput.FocusLost:Connect(function()
+			Library:Tween(UIStroke1, 0.175, Enum.EasingStyle.Sine, Enum.EasingDirection.Out, {Color = Theme.OutlineColor})
+		end)
 
 		local EnterKey = Instance.new("Frame")
 		EnterKey.Name = "EnterKey"
