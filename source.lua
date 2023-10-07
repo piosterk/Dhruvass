@@ -1351,7 +1351,7 @@ function Library:Load(Options)
 
 						local InputText = ((XValue * Options.Maximum) / Options.Maximum) * (Options.Maximum - Options.Minimum) + Options.Minimum
 
-						Inputfield.Text = math.floor(InputText)
+						Inputfield.Text = string.format("%.1f", InputText)
 						
 						Options.Callback(tonumber(Inputfield.Text))
 					end
