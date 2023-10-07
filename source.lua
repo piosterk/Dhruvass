@@ -678,6 +678,7 @@ function Library:Load(Options)
 			Options.Title = Options.Title or "???"
 			Options.Description = Options.Description or "???"
 			Options.Image = Options.Image or "rbxassetid://10723365987"
+			Options.Callback = Options.Callback or function() end
 
 			local TabButton = Instance.new("Frame")
 			TabButton.Name = "TabButton_" .. Options.Title
@@ -938,6 +939,7 @@ function Library:Load(Options)
 					})
 					
 					Library.LastTab = Tab
+					Options.Callback(Options.Title)
 				end
 			end)
 			
